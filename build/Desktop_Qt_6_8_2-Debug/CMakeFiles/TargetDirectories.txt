@@ -1,0 +1,9 @@
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/moj_projekt.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/edit_cache.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/list_install_components.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/install.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/install/local.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/install/strip.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/moj_projekt_autogen_timestamp_deps.dir
+/home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/CMakeFiles/moj_projekt_autogen.dir

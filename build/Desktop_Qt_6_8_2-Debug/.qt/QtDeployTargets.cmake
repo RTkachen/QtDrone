@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_moj_projekt_FILE /home/rt/QT_projekty/moj_projekt/build/Desktop_Qt_6_8_2-Debug/moj_projekt)
+set(__QT_DEPLOY_TARGET_moj_projekt_TYPE EXECUTABLE)

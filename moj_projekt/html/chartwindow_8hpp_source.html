@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Plik źródłowy chartwindow.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('chartwindow_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">chartwindow.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="chartwindow_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CHARTWINDOW_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CHARTWINDOW_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QtCharts&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QChartView&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>QT_BEGIN_NAMESPACE</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespaceUi.html">    9</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceUi.html">Ui</a> { <span class="keyword">class </span><a class="code hl_class" href="classChartWindow.html">ChartWindow</a>; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>QT_END_NAMESPACE</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classChartWindow.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classChartWindow.html">ChartWindow</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classChartWindow.html">ChartWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="classChartWindow.html#a9714c04a78085f4a64559008c5fe39e9">~ChartWindow</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5">openChartWindow</a>(QObject *serialHandler);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8">updateData</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classChartWindow.html#af0fa28c64e8a2e4ee8da8ac42b855ec3">updateTranslations</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classChartWindow.html#aef448551c02f8ff48232d023ca532c8d">setupChart</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> QString &amp;title);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classChartWindow.html#af90550b6cc4930860091807ccabb7976">addData</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e">getCurrentTime</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classChartWindow.html#aa5b7848a04ff1432fe842398ab54dae9">   96</a></span>    Ui::ChartWindow *<a class="code hl_variable" href="classChartWindow.html#aa5b7848a04ff1432fe842398ab54dae9">ui</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classChartWindow.html#a4d770318d122d2c79b539230a61566cb">   97</a></span>    QChartView* <a class="code hl_variable" href="classChartWindow.html#a4d770318d122d2c79b539230a61566cb">chartViews</a>[3];</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classChartWindow.html#a3224f07eabf0d2424b440a0eb2bd5eca">   98</a></span>    QLineSeries* <a class="code hl_variable" href="classChartWindow.html#a3224f07eabf0d2424b440a0eb2bd5eca">series</a>[3];</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classChartWindow.html#a873ff371030a2d22c8d735231ec350f2">   99</a></span>    QValueAxis* <a class="code hl_variable" href="classChartWindow.html#a873ff371030a2d22c8d735231ec350f2">axisX</a>[3];</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classChartWindow.html#a2b2940ce4162f4d9fb2045311d2af386">  100</a></span>    QValueAxis* <a class="code hl_variable" href="classChartWindow.html#a2b2940ce4162f4d9fb2045311d2af386">axisY</a>[3];</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classChartWindow.html#a73d8b10fe9a225d226a17c1722b46ea4">  101</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classChartWindow.html#a73d8b10fe9a225d226a17c1722b46ea4">sampleCount</a> = 0;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classChartWindow.html#a4818f79cd01bf175beabedd4223972ca">  102</a></span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classChartWindow.html#a4818f79cd01bf175beabedd4223972ca">maxSamples</a> = 600; </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">// CHARTWINDOW_HPP</span></div>
+<div class="ttc" id="aclassChartWindow_html"><div class="ttname"><a href="classChartWindow.html">ChartWindow</a></div><div class="ttdoc">Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00019">chartwindow.hpp:19</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a2b2940ce4162f4d9fb2045311d2af386"><div class="ttname"><a href="classChartWindow.html#a2b2940ce4162f4d9fb2045311d2af386">ChartWindow::axisY</a></div><div class="ttdeci">QValueAxis * axisY[3]</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00100">chartwindow.hpp:100</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a3224f07eabf0d2424b440a0eb2bd5eca"><div class="ttname"><a href="classChartWindow.html#a3224f07eabf0d2424b440a0eb2bd5eca">ChartWindow::series</a></div><div class="ttdeci">QLineSeries * series[3]</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00098">chartwindow.hpp:98</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a445f875cd6c4cbe82e357e18ae6d7fd8"><div class="ttname"><a href="classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8">ChartWindow::updateData</a></div><div class="ttdeci">void updateData(double x, double y, double z)</div><div class="ttdoc">Aktualizuje dane wykresów na podstawie otrzymanych wartości.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00164">chartwindow.cpp:164</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a4818f79cd01bf175beabedd4223972ca"><div class="ttname"><a href="classChartWindow.html#a4818f79cd01bf175beabedd4223972ca">ChartWindow::maxSamples</a></div><div class="ttdeci">const int maxSamples</div><div class="ttdoc">30s / 0.05s</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00102">chartwindow.hpp:102</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a4921e9dab0975565a30e07137226aeb5"><div class="ttname"><a href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5">ChartWindow::openChartWindow</a></div><div class="ttdeci">static void openChartWindow(QObject *serialHandler)</div><div class="ttdoc">Statyczna metoda otwierająca okno wykresów.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00052">chartwindow.cpp:52</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a4d770318d122d2c79b539230a61566cb"><div class="ttname"><a href="classChartWindow.html#a4d770318d122d2c79b539230a61566cb">ChartWindow::chartViews</a></div><div class="ttdeci">QChartView * chartViews[3]</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00097">chartwindow.hpp:97</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a73d8b10fe9a225d226a17c1722b46ea4"><div class="ttname"><a href="classChartWindow.html#a73d8b10fe9a225d226a17c1722b46ea4">ChartWindow::sampleCount</a></div><div class="ttdeci">int sampleCount</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00101">chartwindow.hpp:101</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a873ff371030a2d22c8d735231ec350f2"><div class="ttname"><a href="classChartWindow.html#a873ff371030a2d22c8d735231ec350f2">ChartWindow::axisX</a></div><div class="ttdeci">QValueAxis * axisX[3]</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00099">chartwindow.hpp:99</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_a9714c04a78085f4a64559008c5fe39e9"><div class="ttname"><a href="classChartWindow.html#a9714c04a78085f4a64559008c5fe39e9">ChartWindow::~ChartWindow</a></div><div class="ttdeci">~ChartWindow()</div><div class="ttdoc">Destruktor ChartWindow.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00038">chartwindow.cpp:38</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_aa5b7848a04ff1432fe842398ab54dae9"><div class="ttname"><a href="classChartWindow.html#aa5b7848a04ff1432fe842398ab54dae9">ChartWindow::ui</a></div><div class="ttdeci">Ui::ChartWindow * ui</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00096">chartwindow.hpp:96</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_aaa6fe2f85301649e5b1ad3eaab9aab2e"><div class="ttname"><a href="classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e">ChartWindow::getCurrentTime</a></div><div class="ttdeci">float getCurrentTime() const</div><div class="ttdoc">Oblicza aktualny czas w sekundach na podstawie liczby próbek.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00115">chartwindow.cpp:115</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_aef448551c02f8ff48232d023ca532c8d"><div class="ttname"><a href="classChartWindow.html#aef448551c02f8ff48232d023ca532c8d">ChartWindow::setupChart</a></div><div class="ttdeci">void setupChart(int index, const QString &amp;title)</div><div class="ttdoc">Inicjalizuje wykres dla danej serii.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00083">chartwindow.cpp:83</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_af0fa28c64e8a2e4ee8da8ac42b855ec3"><div class="ttname"><a href="classChartWindow.html#af0fa28c64e8a2e4ee8da8ac42b855ec3">ChartWindow::updateTranslations</a></div><div class="ttdeci">void updateTranslations()</div><div class="ttdoc">Aktualizuje tłumaczenia interfejsu okna wykresów.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00169">chartwindow.cpp:169</a></div></div>
+<div class="ttc" id="aclassChartWindow_html_af90550b6cc4930860091807ccabb7976"><div class="ttname"><a href="classChartWindow.html#af90550b6cc4930860091807ccabb7976">ChartWindow::addData</a></div><div class="ttdeci">void addData(float x, float y, float z)</div><div class="ttdoc">Dodaje dane do wykresów.</div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8cpp_source.html#l00131">chartwindow.cpp:131</a></div></div>
+<div class="ttc" id="anamespaceUi_html"><div class="ttname"><a href="namespaceUi.html">Ui</a></div><div class="ttdef"><b>Definition</b> <a href="chartwindow_8hpp_source.html#l00009">chartwindow.hpp:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="chartwindow_8hpp.html">chartwindow.hpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

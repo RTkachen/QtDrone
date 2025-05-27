@@ -1,0 +1,9 @@
+<map id="translator.hpp" name="translator.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="117,5,229,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,112,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,33,90,74,88,69,154,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,79,211,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,31,176,65,171,65,171,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="235,79,331,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,28,255,69,252,73,189,33"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="ChartWindow::openChartWindow" name="ChartWindow::openChartWindow">
+<area shape="rect" id="Node000001" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="5,5,240,31"/>
+<area shape="rect" id="Node000002" href="$classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="288,5,480,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,15,274,15,274,21,240,21"/>
+<area shape="rect" id="Node000003" href="$classChartWindow.html#af90550b6cc4930860091807ccabb7976" title="Dodaje dane do wykresów." alt="" coords="528,5,699,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,15,514,15,514,21,480,21"/>
+<area shape="rect" id="Node000004" href="$classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="747,5,965,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="699,15,733,15,733,21,699,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SerialPortHandler::toggleReading" name="SerialPortHandler::toggleReading">
+<area shape="rect" id="Node000001" title="Włącza lub wyłącza tryb odczytu danych z portu." alt="" coords="264,37,408,77"/>
+<area shape="rect" id="Node000002" href="$classMainWindow.html#a7a57f41cd36b4221181dc661a69954bf" title="Slot obsługujący kliknięcie przycisku rozpoczynającego odbieranie danych." alt="" coords="5,5,216,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,48,216,43,216,38,251,43"/>
+<area shape="rect" id="Node000003" href="$classSerialPortHandler.html#a07aab39b7d0f21e1e4327f96480523cf" title="Przełącza tryb odczytu danych i aktualizuje wygląd przycisku Start." alt="" coords="39,69,183,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,72,183,82,182,77,250,67"/>
+</map>

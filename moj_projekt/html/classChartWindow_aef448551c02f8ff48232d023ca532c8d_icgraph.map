@@ -1,0 +1,5 @@
+<map id="ChartWindow::setupChart" name="ChartWindow::setupChart">
+<area shape="rect" id="Node000001" title="Inicjalizuje wykres dla danej serii." alt="" coords="256,5,443,31"/>
+<area shape="rect" id="Node000002" href="$classChartWindow.html#a898138e91e25646ddbcce42ebe88d3d5" title="Konstruktor ChartWindow. Tworzy interfejs użytkownika i ustawia trzy wykresy, przy czym każdy wykres ..." alt="" coords="5,5,208,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,21,208,21,208,15,242,15"/>
+</map>

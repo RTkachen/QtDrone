@@ -1,0 +1,13 @@
+<map id="D3widget.cpp" name="D3widget.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="279,5,390,31"/>
+<area shape="rect" id="Node000002" href="$D3widget_8hpp.html" title="Komponent OpenGL odpowiedzialny za wyświetlanie i obracanie obiektu 3D." alt="" coords="279,79,391,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,31,337,65,332,65,332,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,159,133,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,107,122,158,120,153,295,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="157,152,317,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="322,106,273,145,270,141,319,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="342,159,525,185"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="351,102,410,149,406,153,348,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="549,159,648,185"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="375,101,538,149,549,153,547,158,537,155,373,107"/>
+</map>

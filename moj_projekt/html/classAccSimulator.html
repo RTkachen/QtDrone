@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Dokumentacja klasy AccSimulator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classAccSimulator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classAccSimulator-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy AccSimulator</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa generująca dane symulacyjne XYZ.  
+ <a href="classAccSimulator.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="accsimulator_8hpp_source.html">accsimulator.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla AccSimulator</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator__inherit__graph.png" border="0" usemap="#aAccSimulator_inherit__map" alt="Inheritance graph"/></div>
+<map name="aAccSimulator_inherit__map" id="aAccSimulator_inherit__map">
+<area shape="rect" title="Klasa generująca dane symulacyjne XYZ." alt="" coords="5,79,113,104"/>
+<area shape="rect" title=" " alt="" coords="22,5,97,31"/>
+<area shape="poly" title=" " alt="" coords="62,44,62,79,57,79,57,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla AccSimulator:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator__coll__graph.png" border="0" usemap="#aAccSimulator_coll__map" alt="Collaboration graph"/></div>
+<map name="aAccSimulator_coll__map" id="aAccSimulator_coll__map">
+<area shape="rect" title="Klasa generująca dane symulacyjne XYZ." alt="" coords="5,79,113,104"/>
+<area shape="rect" title=" " alt="" coords="22,5,97,31"/>
+<area shape="poly" title=" " alt="" coords="62,44,62,79,57,79,57,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:afb9665c5ea98d0dbbf650060469f9135" id="r_afb9665c5ea98d0dbbf650060469f9135"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#afb9665c5ea98d0dbbf650060469f9135">newData</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:afb9665c5ea98d0dbbf650060469f9135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał z nowymi danymi XYZ.  <br /></td></tr>
+<tr class="separator:afb9665c5ea98d0dbbf650060469f9135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a0f951cb227f526da624f2fd11996c40f" id="r_a0f951cb227f526da624f2fd11996c40f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a0f951cb227f526da624f2fd11996c40f">AccSimulator</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a0f951cb227f526da624f2fd11996c40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="classAccSimulator.html" title="Klasa generująca dane symulacyjne XYZ.">AccSimulator</a>.  <br /></td></tr>
+<tr class="separator:a0f951cb227f526da624f2fd11996c40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02798ac1fce5aad106109bb2d7fd7e11" id="r_a02798ac1fce5aad106109bb2d7fd7e11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a02798ac1fce5aad106109bb2d7fd7e11">start</a> ()</td></tr>
+<tr class="memdesc:a02798ac1fce5aad106109bb2d7fd7e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozpoczyna generowanie danych.  <br /></td></tr>
+<tr class="separator:a02798ac1fce5aad106109bb2d7fd7e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51eb03dac2fb78049d488a77d499e11e" id="r_a51eb03dac2fb78049d488a77d499e11e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a51eb03dac2fb78049d488a77d499e11e">stop</a> ()</td></tr>
+<tr class="memdesc:a51eb03dac2fb78049d488a77d499e11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zatrzymuje generowanie danych.  <br /></td></tr>
+<tr class="separator:a51eb03dac2fb78049d488a77d499e11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a28e4707e2639d39af180dcbad0638d" id="r_a5a28e4707e2639d39af180dcbad0638d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a5a28e4707e2639d39af180dcbad0638d">isRunning</a> () const</td></tr>
+<tr class="memdesc:a5a28e4707e2639d39af180dcbad0638d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy generowanie danych jest aktywne.  <br /></td></tr>
+<tr class="separator:a5a28e4707e2639d39af180dcbad0638d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a297ca584abee0461f0899509dd26149f" id="r_a297ca584abee0461f0899509dd26149f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a297ca584abee0461f0899509dd26149f">generateData</a> ()</td></tr>
+<tr class="memdesc:a297ca584abee0461f0899509dd26149f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główna funkcja generująca dane wywoływana przez QTimer.  <br /></td></tr>
+<tr class="separator:a297ca584abee0461f0899509dd26149f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a0811d1762b224acb17f8576a7aeb1f7b" id="r_a0811d1762b224acb17f8576a7aeb1f7b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a0811d1762b224acb17f8576a7aeb1f7b">randomInRange</a> (double min, double max)</td></tr>
+<tr class="memdesc:a0811d1762b224acb17f8576a7aeb1f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generuje losową liczbę zmiennoprzecinkową z danego zakresu.  <br /></td></tr>
+<tr class="separator:a0811d1762b224acb17f8576a7aeb1f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a25a2758c4a580ca402c77827e1e32c20" id="r_a25a2758c4a580ca402c77827e1e32c20"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#a25a2758c4a580ca402c77827e1e32c20">timer</a></td></tr>
+<tr class="memdesc:a25a2758c4a580ca402c77827e1e32c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer do okresowego wywoływania generacji danych.  <br /></td></tr>
+<tr class="separator:a25a2758c4a580ca402c77827e1e32c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebe16082e0de2bd99089fe26ff53dbf" id="r_abebe16082e0de2bd99089fe26ff53dbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAccSimulator.html#abebe16082e0de2bd99089fe26ff53dbf">running</a> = false</td></tr>
+<tr class="memdesc:abebe16082e0de2bd99089fe26ff53dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flaga wskazująca czy generowanie jest aktywne.  <br /></td></tr>
+<tr class="separator:abebe16082e0de2bd99089fe26ff53dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Generuje pseudolosowe dane przy pomocy timera z ustalonym interwałem czasowym. Symuluje dane akcelerometru w zakresie zbliżonym do [-2.00, 2.00]. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8hpp_source.html#l00013">13</a> pliku <a class="el" href="accsimulator_8hpp_source.html">accsimulator.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a0f951cb227f526da624f2fd11996c40f" name="a0f951cb227f526da624f2fd11996c40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f951cb227f526da624f2fd11996c40f">&#9670;&#160;</a></span>AccSimulator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AccSimulator::AccSimulator </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Wskaźnik do obiektu nadrzędnego. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8cpp_source.html#l00003">3</a> pliku <a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a0f951cb227f526da624f2fd11996c40f_cgraph.png" border="0" usemap="#aclassAccSimulator_a0f951cb227f526da624f2fd11996c40f_cgraph" alt=""/></div>
+<map name="aclassAccSimulator_a0f951cb227f526da624f2fd11996c40f_cgraph" id="aclassAccSimulator_a0f951cb227f526da624f2fd11996c40f_cgraph">
+<area shape="rect" title="Konstruktor klasy AccSimulator." alt="" coords="5,31,208,56"/>
+<area shape="rect" href="classAccSimulator.html#a297ca584abee0461f0899509dd26149f" title="Główna funkcja generująca dane wywoływana przez QTimer." alt="" coords="256,31,461,56"/>
+<area shape="poly" title=" " alt="" coords="208,41,243,41,243,46,208,46"/>
+<area shape="rect" href="classAccSimulator.html#afb9665c5ea98d0dbbf650060469f9135" title="Sygnał z nowymi danymi XYZ." alt="" coords="531,5,706,31"/>
+<area shape="poly" title=" " alt="" coords="461,31,518,25,518,30,462,36"/>
+<area shape="rect" href="classAccSimulator.html#a0811d1762b224acb17f8576a7aeb1f7b" title="Generuje losową liczbę zmiennoprzecinkową z danego zakresu." alt="" coords="509,55,728,80"/>
+<area shape="poly" title=" " alt="" coords="462,50,496,53,496,59,461,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a297ca584abee0461f0899509dd26149f" name="a297ca584abee0461f0899509dd26149f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297ca584abee0461f0899509dd26149f">&#9670;&#160;</a></span>generateData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AccSimulator::generateData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8cpp_source.html#l00045">45</a> pliku <a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a297ca584abee0461f0899509dd26149f_cgraph.png" border="0" usemap="#aclassAccSimulator_a297ca584abee0461f0899509dd26149f_cgraph" alt=""/></div>
+<map name="aclassAccSimulator_a297ca584abee0461f0899509dd26149f_cgraph" id="aclassAccSimulator_a297ca584abee0461f0899509dd26149f_cgraph">
+<area shape="rect" title="Główna funkcja generująca dane wywoływana przez QTimer." alt="" coords="5,31,211,56"/>
+<area shape="rect" href="classAccSimulator.html#afb9665c5ea98d0dbbf650060469f9135" title="Sygnał z nowymi danymi XYZ." alt="" coords="281,5,455,31"/>
+<area shape="poly" title=" " alt="" coords="210,31,267,25,267,30,211,36"/>
+<area shape="rect" href="classAccSimulator.html#a0811d1762b224acb17f8576a7aeb1f7b" title="Generuje losową liczbę zmiennoprzecinkową z danego zakresu." alt="" coords="259,55,477,80"/>
+<area shape="poly" title=" " alt="" coords="211,50,245,53,245,59,210,55"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a297ca584abee0461f0899509dd26149f_icgraph.png" border="0" usemap="#aclassAccSimulator_a297ca584abee0461f0899509dd26149f_icgraph" alt=""/></div>
+<map name="aclassAccSimulator_a297ca584abee0461f0899509dd26149f_icgraph" id="aclassAccSimulator_a297ca584abee0461f0899509dd26149f_icgraph">
+<area shape="rect" title="Główna funkcja generująca dane wywoływana przez QTimer." alt="" coords="256,5,461,31"/>
+<area shape="rect" href="classAccSimulator.html#a0f951cb227f526da624f2fd11996c40f" title="Konstruktor klasy AccSimulator." alt="" coords="5,5,208,31"/>
+<area shape="poly" title=" " alt="" coords="243,21,208,21,208,15,243,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a28e4707e2639d39af180dcbad0638d" name="a5a28e4707e2639d39af180dcbad0638d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a28e4707e2639d39af180dcbad0638d">&#9670;&#160;</a></span>isRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AccSimulator::isRunning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- jeśli generowanie danych jest aktywne. </td></tr>
+    <tr><td class="paramname">false</td><td>- jeśli generowanie danych nie jest aktywne. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8cpp_source.html#l00034">34</a> pliku <a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a5a28e4707e2639d39af180dcbad0638d_icgraph.png" border="0" usemap="#aclassAccSimulator_a5a28e4707e2639d39af180dcbad0638d_icgraph" alt=""/></div>
+<map name="aclassAccSimulator_a5a28e4707e2639d39af180dcbad0638d_icgraph" id="aclassAccSimulator_a5a28e4707e2639d39af180dcbad0638d_icgraph">
+<area shape="rect" title="Sprawdza, czy generowanie danych jest aktywne." alt="" coords="209,13,389,38"/>
+<area shape="rect" href="classSimulationController.html#a7e5434e486053b2ab7727bbd9d7b4508" title="Sprawdza, czy symulacja jest aktywna." alt="" coords="5,5,161,45"/>
+<area shape="poly" title=" " alt="" coords="195,28,161,28,161,23,195,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb9665c5ea98d0dbbf650060469f9135" name="afb9665c5ea98d0dbbf650060469f9135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9665c5ea98d0dbbf650060469f9135">&#9670;&#160;</a></span>newData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AccSimulator::newData </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wartość X. </td></tr>
+    <tr><td class="paramname">y</td><td>Wartość Y. </td></tr>
+    <tr><td class="paramname">z</td><td>Wartość Z. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_afb9665c5ea98d0dbbf650060469f9135_icgraph.png" border="0" usemap="#aclassAccSimulator_afb9665c5ea98d0dbbf650060469f9135_icgraph" alt=""/></div>
+<map name="aclassAccSimulator_afb9665c5ea98d0dbbf650060469f9135_icgraph" id="aclassAccSimulator_afb9665c5ea98d0dbbf650060469f9135_icgraph">
+<area shape="rect" title="Sygnał z nowymi danymi XYZ." alt="" coords="509,35,684,60"/>
+<area shape="rect" href="classAccSimulator.html#a297ca584abee0461f0899509dd26149f" title="Główna funkcja generująca dane wywoływana przez QTimer." alt="" coords="256,5,461,31"/>
+<area shape="poly" title=" " alt="" coords="495,38,461,33,462,28,496,32"/>
+<area shape="rect" href="classSimulationController.html#a412ed77f039fb2346b6ffcda411c686b" title="Konstruktor klasy SimulationController." alt="" coords="277,55,441,95"/>
+<area shape="poly" title=" " alt="" coords="496,62,441,68,440,63,495,57"/>
+<area shape="rect" href="classAccSimulator.html#a0f951cb227f526da624f2fd11996c40f" title="Konstruktor klasy AccSimulator." alt="" coords="5,5,208,31"/>
+<area shape="poly" title=" " alt="" coords="243,21,208,21,208,15,243,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0811d1762b224acb17f8576a7aeb1f7b" name="a0811d1762b224acb17f8576a7aeb1f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0811d1762b224acb17f8576a7aeb1f7b">&#9670;&#160;</a></span>randomInRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double AccSimulator::randomInRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>Wartość minimalna. </td></tr>
+    <tr><td class="paramname">max</td><td>Wartość maksymalna. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Losowa wartość z przedziału [min, max]. </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8cpp_source.html#l00040">40</a> pliku <a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a0811d1762b224acb17f8576a7aeb1f7b_icgraph.png" border="0" usemap="#aclassAccSimulator_a0811d1762b224acb17f8576a7aeb1f7b_icgraph" alt=""/></div>
+<map name="aclassAccSimulator_a0811d1762b224acb17f8576a7aeb1f7b_icgraph" id="aclassAccSimulator_a0811d1762b224acb17f8576a7aeb1f7b_icgraph">
+<area shape="rect" title="Generuje losową liczbę zmiennoprzecinkową z danego zakresu." alt="" coords="509,5,728,31"/>
+<area shape="rect" href="classAccSimulator.html#a297ca584abee0461f0899509dd26149f" title="Główna funkcja generująca dane wywoływana przez QTimer." alt="" coords="256,5,461,31"/>
+<area shape="poly" title=" " alt="" coords="496,21,462,21,462,15,496,15"/>
+<area shape="rect" href="classAccSimulator.html#a0f951cb227f526da624f2fd11996c40f" title="Konstruktor klasy AccSimulator." alt="" coords="5,5,208,31"/>
+<area shape="poly" title=" " alt="" coords="243,21,208,21,208,15,243,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a02798ac1fce5aad106109bb2d7fd7e11" name="a02798ac1fce5aad106109bb2d7fd7e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02798ac1fce5aad106109bb2d7fd7e11">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AccSimulator::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8cpp_source.html#l00014">14</a> pliku <a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a02798ac1fce5aad106109bb2d7fd7e11_icgraph.png" border="0" usemap="#aclassAccSimulator_a02798ac1fce5aad106109bb2d7fd7e11_icgraph" alt=""/></div>
+<map name="aclassAccSimulator_a02798ac1fce5aad106109bb2d7fd7e11_icgraph" id="aclassAccSimulator_a02798ac1fce5aad106109bb2d7fd7e11_icgraph">
+<area shape="rect" title="Rozpoczyna generowanie danych." alt="" coords="209,13,356,38"/>
+<area shape="rect" href="classSimulationController.html#a884224ae701a70aba2001215039ff070" title="Uruchamia symulację." alt="" coords="5,5,161,45"/>
+<area shape="poly" title=" " alt="" coords="196,28,161,28,161,23,196,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51eb03dac2fb78049d488a77d499e11e" name="a51eb03dac2fb78049d488a77d499e11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51eb03dac2fb78049d488a77d499e11e">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AccSimulator::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8cpp_source.html#l00024">24</a> pliku <a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAccSimulator_a51eb03dac2fb78049d488a77d499e11e_icgraph.png" border="0" usemap="#aclassAccSimulator_a51eb03dac2fb78049d488a77d499e11e_icgraph" alt=""/></div>
+<map name="aclassAccSimulator_a51eb03dac2fb78049d488a77d499e11e_icgraph" id="aclassAccSimulator_a51eb03dac2fb78049d488a77d499e11e_icgraph">
+<area shape="rect" title="Zatrzymuje generowanie danych." alt="" coords="209,13,353,38"/>
+<area shape="rect" href="classSimulationController.html#a4a7abe5ef8f761c07113a1f37ae29085" title="Zatrzymuje symulację." alt="" coords="5,5,161,45"/>
+<area shape="poly" title=" " alt="" coords="195,28,162,28,162,23,195,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="abebe16082e0de2bd99089fe26ff53dbf" name="abebe16082e0de2bd99089fe26ff53dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebe16082e0de2bd99089fe26ff53dbf">&#9670;&#160;</a></span>running</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AccSimulator::running = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8hpp_source.html#l00059">59</a> pliku <a class="el" href="accsimulator_8hpp_source.html">accsimulator.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a25a2758c4a580ca402c77827e1e32c20" name="a25a2758c4a580ca402c77827e1e32c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a2758c4a580ca402c77827e1e32c20">&#9670;&#160;</a></span>timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* AccSimulator::timer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="accsimulator_8hpp_source.html#l00058">58</a> pliku <a class="el" href="accsimulator_8hpp_source.html">accsimulator.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="accsimulator_8hpp_source.html">accsimulator.hpp</a></li>
+<li><a class="el" href="accsimulator_8cpp_source.html">accsimulator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classAccSimulator.html">AccSimulator</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

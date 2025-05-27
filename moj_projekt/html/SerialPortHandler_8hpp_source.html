@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Plik źródłowy SerialPortHandler.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('SerialPortHandler_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SerialPortHandler.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="SerialPortHandler_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef SERIALPORTHANDLER_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define SERIALPORTHANDLER_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;QSerialPort&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QSerialPortInfo&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QComboBox&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classSerialPortHandler.html">SerialPortHandler</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classSerialPortHandler.html">SerialPortHandler</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    QStringList <a class="code hl_function" href="classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71">availablePorts</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSerialPortHandler.html#a048c24808a4c6fb0de199df34ff141c3">toggleConnection</a>(<span class="keyword">const</span> QString&amp; portName);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSerialPortHandler.html#ab2c7923e667e2bb8b7153d7d6c2178ce">toggleReading</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b">   57</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b">isConnected</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classSerialPortHandler.html#a428a6e13f99301d3a2b8243d41074bea">m_port</a>.isOpen(); }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#ae83bb245e7b1e8282224cbc3c1228d46">   65</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classSerialPortHandler.html#ae83bb245e7b1e8282224cbc3c1228d46">isReading</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classSerialPortHandler.html#a082f29e4dd2474c815bd6c73fe208910">m_reading</a>; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">static</span> QByteArray <a class="code hl_function" href="classSerialPortHandler.html#af41f27008f2baa53581194e7c99e0ea6">computeCRC</a>(<span class="keyword">const</span> QByteArray&amp; dataLine);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964">updateConnectionUI</a>(<span class="keyword">const</span> QString&amp; portName, QPushButton* btnConnect, QPushButton* btnStart);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSerialPortHandler.html#a07aab39b7d0f21e1e4327f96480523cf">toggleReadingUI</a>(QPushButton* btnStart);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSerialPortHandler.html#ad1c976d1336fb269a088b27baf3b4e2c">refreshAvailablePorts</a>(QComboBox* combo);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>signals:</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779">  118</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779">newData</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97">onReadyRead</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#a61a2e270f020be6a774d10e5fe4ba6cd">  127</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classSerialPortHandler.html#a61a2e270f020be6a774d10e5fe4ba6cd">m_lastX</a> = 0.0; </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#a27165d79e8899378281e4d72aa8fe0fa">  128</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classSerialPortHandler.html#a27165d79e8899378281e4d72aa8fe0fa">m_lastY</a> = 0.0; </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#ad6cae5932fed61bfcf372d8e22f67a2e">  129</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="classSerialPortHandler.html#ad6cae5932fed61bfcf372d8e22f67a2e">m_lastZ</a> = 0.0; </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#ad4398458cada3a9cc51ca71f6eda3eb0">  130</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classSerialPortHandler.html#ad4398458cada3a9cc51ca71f6eda3eb0">m_firstMeasurement</a> = <span class="keyword">true</span>; </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#a428a6e13f99301d3a2b8243d41074bea">  131</a></span>    QSerialPort <a class="code hl_variable" href="classSerialPortHandler.html#a428a6e13f99301d3a2b8243d41074bea">m_port</a>; </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#aa46dbe4db812538f81f5224ec782246e">  132</a></span>    QByteArray <a class="code hl_variable" href="classSerialPortHandler.html#aa46dbe4db812538f81f5224ec782246e">m_buffer</a>; </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classSerialPortHandler.html#a082f29e4dd2474c815bd6c73fe208910">  133</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classSerialPortHandler.html#a082f29e4dd2474c815bd6c73fe208910">m_reading</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>};</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#endif </span><span class="comment">// SERIALPORTHANDLER_HPP</span></div>
+<div class="ttc" id="aclassSerialPortHandler_html"><div class="ttname"><a href="classSerialPortHandler.html">SerialPortHandler</a></div><div class="ttdoc">Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00023">SerialPortHandler.hpp:24</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a048c24808a4c6fb0de199df34ff141c3"><div class="ttname"><a href="classSerialPortHandler.html#a048c24808a4c6fb0de199df34ff141c3">SerialPortHandler::toggleConnection</a></div><div class="ttdeci">void toggleConnection(const QString &amp;portName)</div><div class="ttdoc">Przełącza połączenie z podanym portem szeregowym.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00081">SerialPortHandler.cpp:81</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a07aab39b7d0f21e1e4327f96480523cf"><div class="ttname"><a href="classSerialPortHandler.html#a07aab39b7d0f21e1e4327f96480523cf">SerialPortHandler::toggleReadingUI</a></div><div class="ttdeci">void toggleReadingUI(QPushButton *btnStart)</div><div class="ttdoc">Przełącza tryb odczytu danych i aktualizuje wygląd przycisku Start.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00226">SerialPortHandler.cpp:226</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a082f29e4dd2474c815bd6c73fe208910"><div class="ttname"><a href="classSerialPortHandler.html#a082f29e4dd2474c815bd6c73fe208910">SerialPortHandler::m_reading</a></div><div class="ttdeci">bool m_reading</div><div class="ttdoc">Flaga trybu odczytu danych.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00133">SerialPortHandler.hpp:133</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a27165d79e8899378281e4d72aa8fe0fa"><div class="ttname"><a href="classSerialPortHandler.html#a27165d79e8899378281e4d72aa8fe0fa">SerialPortHandler::m_lastY</a></div><div class="ttdeci">double m_lastY</div><div class="ttdoc">Ostatnia odebrana wartość osi OY.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00128">SerialPortHandler.hpp:128</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a428a6e13f99301d3a2b8243d41074bea"><div class="ttname"><a href="classSerialPortHandler.html#a428a6e13f99301d3a2b8243d41074bea">SerialPortHandler::m_port</a></div><div class="ttdeci">QSerialPort m_port</div><div class="ttdoc">Obiekt portu szeregowego.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00131">SerialPortHandler.hpp:131</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a4902df7cdae4a5c87c06d063787fac97"><div class="ttname"><a href="classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97">SerialPortHandler::onReadyRead</a></div><div class="ttdeci">void onReadyRead()</div><div class="ttdoc">Slot wywoływany, gdy port szeregowy odbierze nowe dane.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00125">SerialPortHandler.cpp:125</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a58cb47d620d267cec4e1e797fe23323b"><div class="ttname"><a href="classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b">SerialPortHandler::isConnected</a></div><div class="ttdeci">bool isConnected() const</div><div class="ttdoc">Sprawdza, czy połączenie z portem szeregowym jest aktywne.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00057">SerialPortHandler.hpp:57</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a61a2e270f020be6a774d10e5fe4ba6cd"><div class="ttname"><a href="classSerialPortHandler.html#a61a2e270f020be6a774d10e5fe4ba6cd">SerialPortHandler::m_lastX</a></div><div class="ttdeci">double m_lastX</div><div class="ttdoc">Ostatnia odebrana wartość osi OX.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00127">SerialPortHandler.hpp:127</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_a7ad695032ce4912f4a5715f322a6bf71"><div class="ttname"><a href="classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71">SerialPortHandler::availablePorts</a></div><div class="ttdeci">QStringList availablePorts() const</div><div class="ttdoc">Zwraca listę dostępnych portów szeregowych.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00065">SerialPortHandler.cpp:65</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_aa46dbe4db812538f81f5224ec782246e"><div class="ttname"><a href="classSerialPortHandler.html#aa46dbe4db812538f81f5224ec782246e">SerialPortHandler::m_buffer</a></div><div class="ttdeci">QByteArray m_buffer</div><div class="ttdoc">Bufor dla odebranych bajtów.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00132">SerialPortHandler.hpp:132</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_ab2c7923e667e2bb8b7153d7d6c2178ce"><div class="ttname"><a href="classSerialPortHandler.html#ab2c7923e667e2bb8b7153d7d6c2178ce">SerialPortHandler::toggleReading</a></div><div class="ttdeci">void toggleReading()</div><div class="ttdoc">Włącza lub wyłącza tryb odczytu danych z portu.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00108">SerialPortHandler.cpp:108</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_acd995d6fbeecf515256074f1f31f2779"><div class="ttname"><a href="classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779">SerialPortHandler::newData</a></div><div class="ttdeci">void newData(double x, double y, double z)</div><div class="ttdoc">Sygnał emitowany po odebraniu nowych danych z akcelerometru.</div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_ad1c976d1336fb269a088b27baf3b4e2c"><div class="ttname"><a href="classSerialPortHandler.html#ad1c976d1336fb269a088b27baf3b4e2c">SerialPortHandler::refreshAvailablePorts</a></div><div class="ttdeci">void refreshAvailablePorts(QComboBox *combo)</div><div class="ttdoc">Odświeża listę dostępnych portów szeregowych w podanym komponencie QComboBox.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00247">SerialPortHandler.cpp:247</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_ad4248da463015244ac04710a69b4b964"><div class="ttname"><a href="classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964">SerialPortHandler::updateConnectionUI</a></div><div class="ttdeci">void updateConnectionUI(const QString &amp;portName, QPushButton *btnConnect, QPushButton *btnStart)</div><div class="ttdoc">Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00200">SerialPortHandler.cpp:200</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_ad4398458cada3a9cc51ca71f6eda3eb0"><div class="ttname"><a href="classSerialPortHandler.html#ad4398458cada3a9cc51ca71f6eda3eb0">SerialPortHandler::m_firstMeasurement</a></div><div class="ttdeci">bool m_firstMeasurement</div><div class="ttdoc">Flaga pierwszego pomiaru (pomijanie błędnych danych)</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00130">SerialPortHandler.hpp:130</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_ad6cae5932fed61bfcf372d8e22f67a2e"><div class="ttname"><a href="classSerialPortHandler.html#ad6cae5932fed61bfcf372d8e22f67a2e">SerialPortHandler::m_lastZ</a></div><div class="ttdeci">double m_lastZ</div><div class="ttdoc">Ostatnia odebrana wartość osi OZ.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00129">SerialPortHandler.hpp:129</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_ae83bb245e7b1e8282224cbc3c1228d46"><div class="ttname"><a href="classSerialPortHandler.html#ae83bb245e7b1e8282224cbc3c1228d46">SerialPortHandler::isReading</a></div><div class="ttdeci">bool isReading() const</div><div class="ttdoc">Sprawdza, czy aktywny jest tryb odczytu danych.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8hpp_source.html#l00065">SerialPortHandler.hpp:65</a></div></div>
+<div class="ttc" id="aclassSerialPortHandler_html_af41f27008f2baa53581194e7c99e0ea6"><div class="ttname"><a href="classSerialPortHandler.html#af41f27008f2baa53581194e7c99e0ea6">SerialPortHandler::computeCRC</a></div><div class="ttdeci">static QByteArray computeCRC(const QByteArray &amp;dataLine)</div><div class="ttdoc">Oblicza 8-bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2-znakowy HEX.</div><div class="ttdef"><b>Definition</b> <a href="SerialPortHandler_8cpp_source.html#l00038">SerialPortHandler.cpp:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="SerialPortHandler_8hpp.html">SerialPortHandler.hpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

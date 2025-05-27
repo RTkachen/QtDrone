@@ -1,0 +1,7 @@
+<map id="ChartWindow::updateData" name="ChartWindow::updateData">
+<area shape="rect" id="Node000001" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="5,5,197,31"/>
+<area shape="rect" id="Node000002" href="$classChartWindow.html#af90550b6cc4930860091807ccabb7976" title="Dodaje dane do wykresów." alt="" coords="245,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,15,231,15,231,21,197,21"/>
+<area shape="rect" id="Node000003" href="$classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="464,5,683,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,15,450,15,450,21,416,21"/>
+</map>

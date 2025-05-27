@@ -1,0 +1,7 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" id="Node000001" href="$classD3widget.html" title="Komponent renderujący prostopadłościan 3D z możliwością obrotu." alt="" coords="213,42,297,67"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="179,39,213,45,213,50,178,44"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="21,70,149,95"/>
+<area shape="poly" id="edge8_Node000002_Node000001" title=" " alt="" coords="162,67,213,59,214,64,163,73"/>
+</map>

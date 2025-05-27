@@ -1,0 +1,9 @@
+<map id="MainWindow::on_pushButtonStart_clicked" name="MainWindow::on_pushButtonStart_clicked">
+<area shape="rect" id="Node000001" title="Slot obsługujący kliknięcie przycisku rozpoczynającego odbieranie danych." alt="" coords="5,69,216,109"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b" title="Sprawdza, czy połączenie z portem szeregowym jest aktywne." alt="" coords="264,5,408,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,67,251,47,252,52,183,72"/>
+<area shape="rect" id="Node000003" href="$classSerialPortHandler.html#ae83bb245e7b1e8282224cbc3c1228d46" title="Sprawdza, czy aktywny jest tryb odczytu danych." alt="" coords="264,69,408,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,87,250,87,250,92,216,92"/>
+<area shape="rect" id="Node000004" href="$classSerialPortHandler.html#ab2c7923e667e2bb8b7153d7d6c2178ce" title="Włącza lub wyłącza tryb odczytu danych z portu." alt="" coords="264,133,408,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,107,252,127,251,132,181,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SimulationController::SimulationController" name="SimulationController::SimulationController">
+<area shape="rect" id="Node000001" title="Konstruktor klasy SimulationController." alt="" coords="5,27,169,67"/>
+<area shape="rect" id="Node000002" href="$classAccSimulator.html#afb9665c5ea98d0dbbf650060469f9135" title="Sygnał z nowymi danymi XYZ." alt="" coords="217,5,392,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,34,203,29,204,34,170,39"/>
+<area shape="rect" id="Node000003" href="$classSimulationController.html#a2cd68384eb6369d03f42b7ae9447238e" title="Sygnał z nowymi danymi XYZ." alt="" coords="227,55,383,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,55,213,61,212,66,169,61"/>
+</map>

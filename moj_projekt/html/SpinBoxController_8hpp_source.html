@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Plik źródłowy SpinBoxController.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('SpinBoxController_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SpinBoxController.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="SpinBoxController_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef SPINBOXCONTROLLER_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define SPINBOXCONTROLLER_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;QDoubleSpinBox&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classSpinBoxController.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classSpinBoxController.html">SpinBoxController</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Q_OBJECT</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classSpinBoxController.html">SpinBoxController</a>(QDoubleSpinBox* boxX,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                               QDoubleSpinBox* boxY,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                               QDoubleSpinBox* boxZ,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                               <span class="keywordtype">double</span> initialX = 0.0,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                               <span class="keywordtype">double</span> initialY = 0.0,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                               <span class="keywordtype">double</span> initialZ = 0.0);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classSpinBoxController.html#aff96f5c7f2e51e5a627023af7b260aa4">updateAll</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSpinBoxController.html#a84865686590493911e384315243bf226">updateDisplay</a>(QDoubleSpinBox* box, <span class="keywordtype">double</span> value);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classSpinBoxController.html#a36d6901d483432b6ea88a73b3d58c943">   57</a></span>    QDoubleSpinBox* <a class="code hl_variable" href="classSpinBoxController.html#a36d6901d483432b6ea88a73b3d58c943">m_boxX</a>; </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classSpinBoxController.html#acca2ac3769fbcee3feded3530dedc6f9">   58</a></span>    QDoubleSpinBox* <a class="code hl_variable" href="classSpinBoxController.html#acca2ac3769fbcee3feded3530dedc6f9">m_boxY</a>; </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classSpinBoxController.html#a5916db51a871e0b8497683d9e368b11a">   59</a></span>    QDoubleSpinBox* <a class="code hl_variable" href="classSpinBoxController.html#a5916db51a871e0b8497683d9e368b11a">m_boxZ</a>; </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// SPINBOXCONTROLLER_HPP</span></div>
+<div class="ttc" id="aclassSpinBoxController_html"><div class="ttname"><a href="classSpinBoxController.html">SpinBoxController</a></div><div class="ttdoc">Klasa zarządzająca trzema QDoubleSpinBox pokazującymi wartości akcelerometru.</div><div class="ttdef"><b>Definition</b> <a href="SpinBoxController_8hpp_source.html#l00019">SpinBoxController.hpp:20</a></div></div>
+<div class="ttc" id="aclassSpinBoxController_html_a36d6901d483432b6ea88a73b3d58c943"><div class="ttname"><a href="classSpinBoxController.html#a36d6901d483432b6ea88a73b3d58c943">SpinBoxController::m_boxX</a></div><div class="ttdeci">QDoubleSpinBox * m_boxX</div><div class="ttdoc">Spinbox dla osi OX.</div><div class="ttdef"><b>Definition</b> <a href="SpinBoxController_8hpp_source.html#l00057">SpinBoxController.hpp:57</a></div></div>
+<div class="ttc" id="aclassSpinBoxController_html_a5916db51a871e0b8497683d9e368b11a"><div class="ttname"><a href="classSpinBoxController.html#a5916db51a871e0b8497683d9e368b11a">SpinBoxController::m_boxZ</a></div><div class="ttdeci">QDoubleSpinBox * m_boxZ</div><div class="ttdoc">Spinbox dla osi OZ.</div><div class="ttdef"><b>Definition</b> <a href="SpinBoxController_8hpp_source.html#l00059">SpinBoxController.hpp:59</a></div></div>
+<div class="ttc" id="aclassSpinBoxController_html_a84865686590493911e384315243bf226"><div class="ttname"><a href="classSpinBoxController.html#a84865686590493911e384315243bf226">SpinBoxController::updateDisplay</a></div><div class="ttdeci">void updateDisplay(QDoubleSpinBox *box, double value)</div><div class="ttdoc">Pomocnicza funkcja do ustawienia wartości w jednym spinboxie.</div><div class="ttdef"><b>Definition</b> <a href="SpinBoxController_8cpp_source.html#l00052">SpinBoxController.cpp:52</a></div></div>
+<div class="ttc" id="aclassSpinBoxController_html_acca2ac3769fbcee3feded3530dedc6f9"><div class="ttname"><a href="classSpinBoxController.html#acca2ac3769fbcee3feded3530dedc6f9">SpinBoxController::m_boxY</a></div><div class="ttdeci">QDoubleSpinBox * m_boxY</div><div class="ttdoc">Spinbox dla osi OY.</div><div class="ttdef"><b>Definition</b> <a href="SpinBoxController_8hpp_source.html#l00058">SpinBoxController.hpp:58</a></div></div>
+<div class="ttc" id="aclassSpinBoxController_html_aff96f5c7f2e51e5a627023af7b260aa4"><div class="ttname"><a href="classSpinBoxController.html#aff96f5c7f2e51e5a627023af7b260aa4">SpinBoxController::updateAll</a></div><div class="ttdeci">void updateAll(double x, double y, double z)</div><div class="ttdoc">Aktualizuje wartości we wszystkich trzech spinboxach.</div><div class="ttdef"><b>Definition</b> <a href="SpinBoxController_8cpp_source.html#l00039">SpinBoxController.cpp:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="SpinBoxController_8hpp.html">SpinBoxController.hpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

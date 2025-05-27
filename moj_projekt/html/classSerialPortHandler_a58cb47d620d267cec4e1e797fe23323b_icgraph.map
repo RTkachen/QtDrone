@@ -1,0 +1,9 @@
+<map id="SerialPortHandler::isConnected" name="SerialPortHandler::isConnected">
+<area shape="rect" id="Node000001" title="Sprawdza, czy połączenie z portem szeregowym jest aktywne." alt="" coords="523,37,667,77"/>
+<area shape="rect" id="Node000002" href="$classMainWindow.html#a7a57f41cd36b4221181dc661a69954bf" title="Slot obsługujący kliknięcie przycisku rozpoczynającego odbieranie danych." alt="" coords="264,5,475,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,48,474,43,475,38,509,43"/>
+<area shape="rect" id="Node000003" href="$classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="292,69,447,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="509,72,447,81,446,76,509,67"/>
+<area shape="rect" id="Node000004" href="$classMainWindow.html#a74bf7ec51582db3d2d98265b66afc0cc" title="Slot obsługujący kliknięcie przycisku łączenia z wybranym portem szeregowym." alt="" coords="5,69,216,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="278,92,216,92,216,87,278,87"/>
+</map>

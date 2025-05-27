@@ -1,0 +1,5 @@
+<map id="SimulationController::stopSimulation" name="SimulationController::stopSimulation">
+<area shape="rect" id="Node000001" title="Zatrzymuje symulację." alt="" coords="5,5,161,45"/>
+<area shape="rect" id="Node000002" href="$classAccSimulator.html#a51eb03dac2fb78049d488a77d499e11e" title="Zatrzymuje generowanie danych." alt="" coords="209,13,353,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,23,196,23,196,28,162,28"/>
+</map>

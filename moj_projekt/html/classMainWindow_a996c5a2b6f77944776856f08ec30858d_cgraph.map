@@ -1,0 +1,15 @@
+<map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
+<area shape="rect" id="Node000001" title="Konstruktor MainWindow." alt="" coords="5,127,203,153"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71" title="Zwraca listę dostępnych portów szeregowych." alt="" coords="297,5,441,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,125,178,91,250,55,282,43,284,48,252,60,181,95,126,129"/>
+<area shape="rect" id="Node000003" href="$classTranslator.html#af3c94c07cf814ffbac1ba160a3e3cf49" title="Sygnał emitowany po zmianie języka." alt="" coords="263,70,474,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,125,250,105,295,96,296,101,251,111,164,130"/>
+<area shape="rect" id="Node000004" href="$classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779" title="Sygnał emitowany po odebraniu nowych danych z akcelerometru." alt="" coords="297,120,441,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,137,283,137,283,143,203,143"/>
+<area shape="rect" id="Node000005" href="$classSpinBoxController.html#aff96f5c7f2e51e5a627023af7b260aa4" title="Aktualizuje wartości we wszystkich trzech spinboxach." alt="" coords="295,184,442,224"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="158,150,283,181,282,186,157,155"/>
+<area shape="rect" id="Node000007" href="$classMainWindow.html#a9a78d66812162457c6fa14002bacb829" title="Aktualizuje tłumaczenia interfejsu." alt="" coords="251,249,487,274"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="122,151,177,192,213,214,252,234,277,243,276,248,250,238,211,219,174,196,119,155"/>
+<area shape="rect" id="Node000006" href="$classSpinBoxController.html#a84865686590493911e384315243bf226" title="Pomocnicza funkcja do ustawienia wartości w jednym spinboxie." alt="" coords="535,184,681,224"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="442,201,521,201,521,207,442,207"/>
+</map>

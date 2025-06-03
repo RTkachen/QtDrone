@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['m_5fboxx_0',['m_boxX',['../classSpinBoxController.html#a36d6901d483432b6ea88a73b3d58c943',1,'SpinBoxController']]],
+  ['m_5fboxy_1',['m_boxY',['../classSpinBoxController.html#acca2ac3769fbcee3feded3530dedc6f9',1,'SpinBoxController']]],
+  ['m_5fboxz_2',['m_boxZ',['../classSpinBoxController.html#a5916db51a871e0b8497683d9e368b11a',1,'SpinBoxController']]],
+  ['m_5fbuffer_3',['m_buffer',['../classSerialPortHandler.html#aa46dbe4db812538f81f5224ec782246e',1,'SerialPortHandler']]],
+  ['m_5fbutton_4',['m_button',['../classTranslator.html#aaba3ebcf8bfdb870e81c2a97c2160a13',1,'Translator']]],
+  ['m_5fcurrenttranslator_5',['m_currentTranslator',['../classTranslator.html#aaf3be856994d162442c84601ca15ac29',1,'Translator']]],
+  ['m_5febo_6',['m_ebo',['../classD3widget.html#abf3b951aca0fae047e9779ec9ce635d2',1,'D3widget']]],
+  ['m_5ffirstmeasurement_7',['m_firstMeasurement',['../classSerialPortHandler.html#ad4398458cada3a9cc51ca71f6eda3eb0',1,'SerialPortHandler']]],
+  ['m_5flastx_8',['m_lastX',['../classSerialPortHandler.html#a61a2e270f020be6a774d10e5fe4ba6cd',1,'SerialPortHandler']]],
+  ['m_5flasty_9',['m_lastY',['../classSerialPortHandler.html#a27165d79e8899378281e4d72aa8fe0fa',1,'SerialPortHandler']]],
+  ['m_5flastz_10',['m_lastZ',['../classSerialPortHandler.html#ad6cae5932fed61bfcf372d8e22f67a2e',1,'SerialPortHandler']]],
+  ['m_5fpitch_11',['m_pitch',['../classD3widget.html#ad2012ec012f8b88c004f2bba4ab136e0',1,'D3widget']]],
+  ['m_5fport_12',['m_port',['../classSerialPortHandler.html#a428a6e13f99301d3a2b8243d41074bea',1,'SerialPortHandler']]],
+  ['m_5fprogram_13',['m_program',['../classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26',1,'D3widget']]],
+  ['m_5fprojection_14',['m_projection',['../classD3widget.html#a3f23247d93228306ae39df52976cdf04',1,'D3widget']]],
+  ['m_5freading_15',['m_reading',['../classSerialPortHandler.html#a082f29e4dd2474c815bd6c73fe208910',1,'SerialPortHandler']]],
+  ['m_5froll_16',['m_roll',['../classD3widget.html#a3104d077e058a4e6b80e574d2dfb6195',1,'D3widget']]],
+  ['m_5fvao_17',['m_vao',['../classD3widget.html#a7a1d58d76c3c4b73132630229b539611',1,'D3widget']]],
+  ['m_5fvbo_18',['m_vbo',['../classD3widget.html#aea9ebb1fad3285d1e3a191e50d11a879',1,'D3widget']]],
+  ['maxsamples_19',['maxSamples',['../classChartWindow.html#a4818f79cd01bf175beabedd4223972ca',1,'ChartWindow']]]
+];

@@ -1,0 +1,25 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="Node000001" title="Klasa reprezentująca główne okno aplikacji." alt="" coords="765,152,872,177"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="444,5,560,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,11,614,12,658,18,702,30,743,49,770,72,790,100,815,151,810,153,786,103,766,76,740,54,700,35,657,23,614,17,574,16"/>
+<area shape="rect" id="Node000003" href="$classSpinBoxController.html" title="Klasa zarządzająca trzema QDoubleSpinBox pokazującymi wartości akcelerometru." alt="" coords="261,59,400,84"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="414,74,568,91,656,106,742,127,795,149,793,154,741,133,655,111,567,96,413,79"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,167,80,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,157,103,141,145,121,188,105,269,81,271,87,190,110,147,126,105,146,77,162"/>
+<area shape="rect" id="Node000005" href="$classSerialPortHandler.html" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru." alt="" coords="263,119,399,144"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="93,162,103,159,186,145,262,135,263,141,186,150,105,165,94,167"/>
+<area shape="rect" id="Node000008" href="$classTranslator.html" title="Klasa Translator odpowiedzialna za dynamiczne przełączanie języka GUI." alt="" coords="287,172,374,197"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="94,178,287,181,287,187,94,183"/>
+<area shape="rect" id="Node000009" href="$classSimulationController.html" title="Kontroler symulacji akcelerometru." alt="" coords="424,244,580,269"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="94,185,426,241,425,247,93,190"/>
+<area shape="rect" id="Node000010" href="$classAccSimulator.html" title="Klasa generująca dane symulacyjne XYZ." alt="" coords="129,268,237,293"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="62,202,82,225,106,246,142,266,140,270,102,251,78,229,58,205"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="413,131,565,138,742,151,765,154,765,159,741,157,565,144,412,136"/>
+<area shape="rect" id="Node000006" href="$classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z." alt="" coords="447,307,557,332"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="570,319,611,316,655,309,699,296,740,276,765,253,786,226,810,176,815,179,790,229,769,257,743,280,701,301,657,314,612,321,571,324"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="144,317,223,343"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="236,326,447,318,447,324,236,331"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="388,180,580,174,765,165,765,170,580,179,388,186"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="594,256,667,247,705,239,740,226,777,202,805,176,808,179,781,206,743,231,706,244,668,253,594,261"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="251,273,424,260,424,265,251,278"/>
+</map>

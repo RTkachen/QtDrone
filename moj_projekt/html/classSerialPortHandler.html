@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Dokumentacja klasy SerialPortHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classSerialPortHandler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classSerialPortHandler-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy SerialPortHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru.  
+ <a href="classSerialPortHandler.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla SerialPortHandler</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler__inherit__graph.png" border="0" usemap="#aSerialPortHandler_inherit__map" alt="Inheritance graph"/></div>
+<map name="aSerialPortHandler_inherit__map" id="aSerialPortHandler_inherit__map">
+<area shape="rect" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru." alt="" coords="5,79,141,104"/>
+<area shape="rect" title=" " alt="" coords="36,5,111,31"/>
+<area shape="poly" title=" " alt="" coords="76,44,76,79,71,79,71,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla SerialPortHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler__coll__graph.png" border="0" usemap="#aSerialPortHandler_coll__map" alt="Collaboration graph"/></div>
+<map name="aSerialPortHandler_coll__map" id="aSerialPortHandler_coll__map">
+<area shape="rect" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru." alt="" coords="5,79,141,104"/>
+<area shape="rect" title=" " alt="" coords="36,5,111,31"/>
+<area shape="poly" title=" " alt="" coords="76,44,76,79,71,79,71,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:acd995d6fbeecf515256074f1f31f2779" id="r_acd995d6fbeecf515256074f1f31f2779"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779">newData</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:acd995d6fbeecf515256074f1f31f2779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał emitowany po odebraniu nowych danych z akcelerometru.  <br /></td></tr>
+<tr class="separator:acd995d6fbeecf515256074f1f31f2779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a658dff23f3feb1250f3a6a241da57d9c" id="r_a658dff23f3feb1250f3a6a241da57d9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a658dff23f3feb1250f3a6a241da57d9c">SerialPortHandler</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a658dff23f3feb1250f3a6a241da57d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="classSerialPortHandler.html" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru.">SerialPortHandler</a>.  <br /></td></tr>
+<tr class="separator:a658dff23f3feb1250f3a6a241da57d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad695032ce4912f4a5715f322a6bf71" id="r_a7ad695032ce4912f4a5715f322a6bf71"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71">availablePorts</a> () const</td></tr>
+<tr class="memdesc:a7ad695032ce4912f4a5715f322a6bf71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca listę dostępnych portów szeregowych.  <br /></td></tr>
+<tr class="separator:a7ad695032ce4912f4a5715f322a6bf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048c24808a4c6fb0de199df34ff141c3" id="r_a048c24808a4c6fb0de199df34ff141c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a048c24808a4c6fb0de199df34ff141c3">toggleConnection</a> (const QString &amp;portName)</td></tr>
+<tr class="memdesc:a048c24808a4c6fb0de199df34ff141c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przełącza połączenie z podanym portem szeregowym.  <br /></td></tr>
+<tr class="separator:a048c24808a4c6fb0de199df34ff141c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c7923e667e2bb8b7153d7d6c2178ce" id="r_ab2c7923e667e2bb8b7153d7d6c2178ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#ab2c7923e667e2bb8b7153d7d6c2178ce">toggleReading</a> ()</td></tr>
+<tr class="memdesc:ab2c7923e667e2bb8b7153d7d6c2178ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Włącza lub wyłącza tryb odczytu danych z portu.  <br /></td></tr>
+<tr class="separator:ab2c7923e667e2bb8b7153d7d6c2178ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cb47d620d267cec4e1e797fe23323b" id="r_a58cb47d620d267cec4e1e797fe23323b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b">isConnected</a> () const</td></tr>
+<tr class="memdesc:a58cb47d620d267cec4e1e797fe23323b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy połączenie z portem szeregowym jest aktywne.  <br /></td></tr>
+<tr class="separator:a58cb47d620d267cec4e1e797fe23323b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83bb245e7b1e8282224cbc3c1228d46" id="r_ae83bb245e7b1e8282224cbc3c1228d46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#ae83bb245e7b1e8282224cbc3c1228d46">isReading</a> () const</td></tr>
+<tr class="memdesc:ae83bb245e7b1e8282224cbc3c1228d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy aktywny jest tryb odczytu danych.  <br /></td></tr>
+<tr class="separator:ae83bb245e7b1e8282224cbc3c1228d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4248da463015244ac04710a69b4b964" id="r_ad4248da463015244ac04710a69b4b964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964">updateConnectionUI</a> (const QString &amp;portName, QPushButton *btnConnect, QPushButton *btnStart)</td></tr>
+<tr class="memdesc:ad4248da463015244ac04710a69b4b964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym.  <br /></td></tr>
+<tr class="separator:ad4248da463015244ac04710a69b4b964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07aab39b7d0f21e1e4327f96480523cf" id="r_a07aab39b7d0f21e1e4327f96480523cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a07aab39b7d0f21e1e4327f96480523cf">toggleReadingUI</a> (QPushButton *btnStart)</td></tr>
+<tr class="memdesc:a07aab39b7d0f21e1e4327f96480523cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przełącza tryb odczytu danych i aktualizuje wygląd przycisku Start.  <br /></td></tr>
+<tr class="separator:a07aab39b7d0f21e1e4327f96480523cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c976d1336fb269a088b27baf3b4e2c" id="r_ad1c976d1336fb269a088b27baf3b4e2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#ad1c976d1336fb269a088b27baf3b4e2c">refreshAvailablePorts</a> (QComboBox *combo)</td></tr>
+<tr class="memdesc:ad1c976d1336fb269a088b27baf3b4e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odświeża listę dostępnych portów szeregowych w podanym komponencie QComboBox.  <br /></td></tr>
+<tr class="separator:ad1c976d1336fb269a088b27baf3b4e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:af41f27008f2baa53581194e7c99e0ea6" id="r_af41f27008f2baa53581194e7c99e0ea6"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#af41f27008f2baa53581194e7c99e0ea6">computeCRC</a> (const QByteArray &amp;dataLine)</td></tr>
+<tr class="memdesc:af41f27008f2baa53581194e7c99e0ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza 8-bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2-znakowy HEX.  <br /></td></tr>
+<tr class="separator:af41f27008f2baa53581194e7c99e0ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a4902df7cdae4a5c87c06d063787fac97" id="r_a4902df7cdae4a5c87c06d063787fac97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97">onReadyRead</a> ()</td></tr>
+<tr class="memdesc:a4902df7cdae4a5c87c06d063787fac97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot wywoływany, gdy port szeregowy odbierze nowe dane.  <br /></td></tr>
+<tr class="separator:a4902df7cdae4a5c87c06d063787fac97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a61a2e270f020be6a774d10e5fe4ba6cd" id="r_a61a2e270f020be6a774d10e5fe4ba6cd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a61a2e270f020be6a774d10e5fe4ba6cd">m_lastX</a> = 0.0</td></tr>
+<tr class="memdesc:a61a2e270f020be6a774d10e5fe4ba6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ostatnia odebrana wartość osi OX.  <br /></td></tr>
+<tr class="separator:a61a2e270f020be6a774d10e5fe4ba6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27165d79e8899378281e4d72aa8fe0fa" id="r_a27165d79e8899378281e4d72aa8fe0fa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a27165d79e8899378281e4d72aa8fe0fa">m_lastY</a> = 0.0</td></tr>
+<tr class="memdesc:a27165d79e8899378281e4d72aa8fe0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ostatnia odebrana wartość osi OY.  <br /></td></tr>
+<tr class="separator:a27165d79e8899378281e4d72aa8fe0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cae5932fed61bfcf372d8e22f67a2e" id="r_ad6cae5932fed61bfcf372d8e22f67a2e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#ad6cae5932fed61bfcf372d8e22f67a2e">m_lastZ</a> = 0.0</td></tr>
+<tr class="memdesc:ad6cae5932fed61bfcf372d8e22f67a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ostatnia odebrana wartość osi OZ.  <br /></td></tr>
+<tr class="separator:ad6cae5932fed61bfcf372d8e22f67a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4398458cada3a9cc51ca71f6eda3eb0" id="r_ad4398458cada3a9cc51ca71f6eda3eb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#ad4398458cada3a9cc51ca71f6eda3eb0">m_firstMeasurement</a> = true</td></tr>
+<tr class="memdesc:ad4398458cada3a9cc51ca71f6eda3eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flaga pierwszego pomiaru (pomijanie błędnych danych)  <br /></td></tr>
+<tr class="separator:ad4398458cada3a9cc51ca71f6eda3eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428a6e13f99301d3a2b8243d41074bea" id="r_a428a6e13f99301d3a2b8243d41074bea"><td class="memItemLeft" align="right" valign="top">QSerialPort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a428a6e13f99301d3a2b8243d41074bea">m_port</a></td></tr>
+<tr class="memdesc:a428a6e13f99301d3a2b8243d41074bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiekt portu szeregowego.  <br /></td></tr>
+<tr class="separator:a428a6e13f99301d3a2b8243d41074bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46dbe4db812538f81f5224ec782246e" id="r_aa46dbe4db812538f81f5224ec782246e"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#aa46dbe4db812538f81f5224ec782246e">m_buffer</a></td></tr>
+<tr class="memdesc:aa46dbe4db812538f81f5224ec782246e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bufor dla odebranych bajtów.  <br /></td></tr>
+<tr class="separator:aa46dbe4db812538f81f5224ec782246e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082f29e4dd2474c815bd6c73fe208910" id="r_a082f29e4dd2474c815bd6c73fe208910"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialPortHandler.html#a082f29e4dd2474c815bd6c73fe208910">m_reading</a> = false</td></tr>
+<tr class="memdesc:a082f29e4dd2474c815bd6c73fe208910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flaga trybu odczytu danych.  <br /></td></tr>
+<tr class="separator:a082f29e4dd2474c815bd6c73fe208910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00023">23</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a658dff23f3feb1250f3a6a241da57d9c" name="a658dff23f3feb1250f3a6a241da57d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658dff23f3feb1250f3a6a241da57d9c">&#9670;&#160;</a></span>SerialPortHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SerialPortHandler::SerialPortHandler </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Obiekt nadrzędny (domyślnie nullptr).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Inicjalizuje obiekt i łączy sygnał odczytu danych z portu szeregowego z odpowiednim slotem przetwarzającym dane.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Wskaźnik na obiekt rodzica (domyślnie nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00013">13</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a658dff23f3feb1250f3a6a241da57d9c_cgraph.png" border="0" usemap="#aclassSerialPortHandler_a658dff23f3feb1250f3a6a241da57d9c_cgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a658dff23f3feb1250f3a6a241da57d9c_cgraph" id="aclassSerialPortHandler_a658dff23f3feb1250f3a6a241da57d9c_cgraph">
+<area shape="rect" title="Konstruktor klasy SerialPortHandler." alt="" coords="5,37,149,77"/>
+<area shape="rect" href="classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="197,37,341,77"/>
+<area shape="poly" title=" " alt="" coords="150,55,184,55,184,60,150,60"/>
+<area shape="rect" href="classSerialPortHandler.html#af41f27008f2baa53581194e7c99e0ea6" title="Oblicza 8&#45;bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2&#45;znakowy HEX." alt="" coords="389,5,533,45"/>
+<area shape="poly" title=" " alt="" coords="341,43,375,37,376,42,342,48"/>
+<area shape="rect" href="classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779" title="Sygnał emitowany po odebraniu nowych danych z akcelerometru." alt="" coords="389,69,533,109"/>
+<area shape="poly" title=" " alt="" coords="342,67,376,72,375,78,341,72"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a7ad695032ce4912f4a5715f322a6bf71" name="a7ad695032ce4912f4a5715f322a6bf71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad695032ce4912f4a5715f322a6bf71">&#9670;&#160;</a></span>availablePorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList SerialPortHandler::availablePorts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>Lista nazw portów.</dd>
+<dd>
+QStringList Lista nazw dostępnych portów. </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00065">65</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a7ad695032ce4912f4a5715f322a6bf71_icgraph.png" border="0" usemap="#aclassSerialPortHandler_a7ad695032ce4912f4a5715f322a6bf71_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a7ad695032ce4912f4a5715f322a6bf71_icgraph" id="aclassSerialPortHandler_a7ad695032ce4912f4a5715f322a6bf71_icgraph">
+<area shape="rect" title="Zwraca listę dostępnych portów szeregowych." alt="" coords="264,55,408,95"/>
+<area shape="rect" href="classMainWindow.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor MainWindow." alt="" coords="12,5,209,31"/>
+<area shape="poly" title=" " alt="" coords="250,55,215,46,165,33,166,28,217,41,251,50"/>
+<area shape="rect" href="classMainWindow.html#a5dd6fd2201adc933d4fe8d053865710f" title="Slot obsługujący kliknięcie przycisku wyszukiwania dostępnych portów szeregowych." alt="" coords="5,55,216,95"/>
+<area shape="poly" title=" " alt="" coords="250,78,216,78,216,73,250,73"/>
+<area shape="rect" href="classSerialPortHandler.html#ad1c976d1336fb269a088b27baf3b4e2c" title="Odświeża listę dostępnych portów szeregowych w podanym komponencie QComboBox." alt="" coords="30,119,191,159"/>
+<area shape="poly" title=" " alt="" coords="252,102,182,122,181,117,251,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af41f27008f2baa53581194e7c99e0ea6" name="af41f27008f2baa53581194e7c99e0ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41f27008f2baa53581194e7c99e0ea6">&#9670;&#160;</a></span>computeCRC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray SerialPortHandler::computeCRC </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>dataLine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataLine</td><td>Bufor danych, nad którym ma być policzony CRC-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Dwie wielkie cyfry HEX, reprezentujące obliczony CRC-8</dd></dl>
+<p>Ta funkcja wykonuje klasyczny algorytm CRC-8:</p><ol type="1">
+<li>Inicjalizuje rejestr CRC wartością 0x00.</li>
+<li>Dla każdego bajtu z wejściowego <em>dataLine</em> wykonuje:<ul>
+<li>XOR rejestru CRC z aktualnym bajtem.</li>
+<li>8-krotnie:<ul>
+<li>Jeśli najstarszy bit (bit 7) rejestru CRC jest ustawiony:<ul>
+<li>przesuwa cały rejestr o 1 w lewo i XORuje go z wielomianem 0x07</li>
+</ul>
+</li>
+<li>w przeciwnym razie:<ul>
+<li>przesuwa rejestr o 1 w lewo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wynikowy bajt CRC po wszystkich iteracjach zamienia na ciąg 2 znaków heksadecymalnych (0–9, A–F).</li>
+</ol>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataLine</td><td>Bufor danych, nad którym ma być policzony CRC-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Dwie wielkie cyfry HEX, reprezentujące obliczony CRC-8 (np. <code>"3A"</code>, <code>"00"</code>, <code>"FF"</code>). </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00038">38</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_af41f27008f2baa53581194e7c99e0ea6_icgraph.png" border="0" usemap="#aclassSerialPortHandler_af41f27008f2baa53581194e7c99e0ea6_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_af41f27008f2baa53581194e7c99e0ea6_icgraph" id="aclassSerialPortHandler_af41f27008f2baa53581194e7c99e0ea6_icgraph">
+<area shape="rect" title="Oblicza 8&#45;bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2&#45;znakowy HEX." alt="" coords="389,5,533,45"/>
+<area shape="rect" href="classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="197,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="375,28,341,28,341,23,375,23"/>
+<area shape="rect" href="classSerialPortHandler.html#a658dff23f3feb1250f3a6a241da57d9c" title="Konstruktor klasy SerialPortHandler." alt="" coords="5,5,149,45"/>
+<area shape="poly" title=" " alt="" coords="183,28,149,28,149,23,183,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a58cb47d620d267cec4e1e797fe23323b" name="a58cb47d620d267cec4e1e797fe23323b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cb47d620d267cec4e1e797fe23323b">&#9670;&#160;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialPortHandler::isConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- jeśli port jest otwarty. </td></tr>
+    <tr><td class="paramname">false</td><td>- jeśli port nie jest otwarty. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00057">57</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a58cb47d620d267cec4e1e797fe23323b_icgraph.png" border="0" usemap="#aclassSerialPortHandler_a58cb47d620d267cec4e1e797fe23323b_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a58cb47d620d267cec4e1e797fe23323b_icgraph" id="aclassSerialPortHandler_a58cb47d620d267cec4e1e797fe23323b_icgraph">
+<area shape="rect" title="Sprawdza, czy połączenie z portem szeregowym jest aktywne." alt="" coords="523,37,667,77"/>
+<area shape="rect" href="classMainWindow.html#a7a57f41cd36b4221181dc661a69954bf" title="Slot obsługujący kliknięcie przycisku rozpoczynającego odbieranie danych." alt="" coords="264,5,475,45"/>
+<area shape="poly" title=" " alt="" coords="508,48,474,43,475,38,509,43"/>
+<area shape="rect" href="classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="292,69,447,109"/>
+<area shape="poly" title=" " alt="" coords="509,72,447,81,446,76,509,67"/>
+<area shape="rect" href="classMainWindow.html#a74bf7ec51582db3d2d98265b66afc0cc" title="Slot obsługujący kliknięcie przycisku łączenia z wybranym portem szeregowym." alt="" coords="5,69,216,109"/>
+<area shape="poly" title=" " alt="" coords="278,92,216,92,216,87,278,87"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae83bb245e7b1e8282224cbc3c1228d46" name="ae83bb245e7b1e8282224cbc3c1228d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83bb245e7b1e8282224cbc3c1228d46">&#9670;&#160;</a></span>isReading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialPortHandler::isReading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Zwracane wartości</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>- jeśli dane są obecnie odczytywane. </td></tr>
+    <tr><td class="paramname">false</td><td>- jeśli tryb odczytu jest wyłączony. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00065">65</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_ae83bb245e7b1e8282224cbc3c1228d46_icgraph.png" border="0" usemap="#aclassSerialPortHandler_ae83bb245e7b1e8282224cbc3c1228d46_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_ae83bb245e7b1e8282224cbc3c1228d46_icgraph" id="aclassSerialPortHandler_ae83bb245e7b1e8282224cbc3c1228d46_icgraph">
+<area shape="rect" title="Sprawdza, czy aktywny jest tryb odczytu danych." alt="" coords="264,37,408,77"/>
+<area shape="rect" href="classMainWindow.html#a7a57f41cd36b4221181dc661a69954bf" title="Slot obsługujący kliknięcie przycisku rozpoczynającego odbieranie danych." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,48,216,43,216,38,251,43"/>
+<area shape="rect" href="classSerialPortHandler.html#a07aab39b7d0f21e1e4327f96480523cf" title="Przełącza tryb odczytu danych i aktualizuje wygląd przycisku Start." alt="" coords="39,69,183,109"/>
+<area shape="poly" title=" " alt="" coords="250,72,183,82,182,77,250,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd995d6fbeecf515256074f1f31f2779" name="acd995d6fbeecf515256074f1f31f2779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd995d6fbeecf515256074f1f31f2779">&#9670;&#160;</a></span>newData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::newData </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wartość przyspieszenia w osi OX. </td></tr>
+    <tr><td class="paramname">y</td><td>Wartość przyspieszenia w osi OY. </td></tr>
+    <tr><td class="paramname">z</td><td>Wartość przyspieszenia w osi OZ. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_acd995d6fbeecf515256074f1f31f2779_icgraph.png" border="0" usemap="#aclassSerialPortHandler_acd995d6fbeecf515256074f1f31f2779_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_acd995d6fbeecf515256074f1f31f2779_icgraph" id="aclassSerialPortHandler_acd995d6fbeecf515256074f1f31f2779_icgraph">
+<area shape="rect" title="Sygnał emitowany po odebraniu nowych danych z akcelerometru." alt="" coords="443,27,587,67"/>
+<area shape="rect" href="classMainWindow.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor MainWindow." alt="" coords="197,5,395,31"/>
+<area shape="poly" title=" " alt="" coords="429,39,390,33,391,28,429,33"/>
+<area shape="rect" href="classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="224,55,368,95"/>
+<area shape="poly" title=" " alt="" coords="429,61,369,69,368,63,429,56"/>
+<area shape="rect" href="classSerialPortHandler.html#a658dff23f3feb1250f3a6a241da57d9c" title="Konstruktor klasy SerialPortHandler." alt="" coords="5,55,149,95"/>
+<area shape="poly" title=" " alt="" coords="210,78,150,78,150,73,210,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4902df7cdae4a5c87c06d063787fac97" name="a4902df7cdae4a5c87c06d063787fac97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4902df7cdae4a5c87c06d063787fac97">&#9670;&#160;</a></span>onReadyRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::onReadyRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot wywoływany automatycznie, gdy dostępne są nowe dane z portu szeregowego.</p>
+<p>Przetwarza dane w formacie: A &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;crc&gt;. Weryfikuje poprawność CRC, przelicza wartości na jednostki g i emituje sygnał z nowymi danymi. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00125">125</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_cgraph.png" border="0" usemap="#aclassSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_cgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_cgraph" id="aclassSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_cgraph">
+<area shape="rect" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="5,37,149,77"/>
+<area shape="rect" href="classSerialPortHandler.html#af41f27008f2baa53581194e7c99e0ea6" title="Oblicza 8&#45;bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2&#45;znakowy HEX." alt="" coords="197,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="149,43,183,37,184,42,150,48"/>
+<area shape="rect" href="classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779" title="Sygnał emitowany po odebraniu nowych danych z akcelerometru." alt="" coords="197,69,341,109"/>
+<area shape="poly" title=" " alt="" coords="150,67,184,72,183,78,149,72"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_icgraph.png" border="0" usemap="#aclassSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_icgraph" id="aclassSerialPortHandler_a4902df7cdae4a5c87c06d063787fac97_icgraph">
+<area shape="rect" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="197,5,341,45"/>
+<area shape="rect" href="classSerialPortHandler.html#a658dff23f3feb1250f3a6a241da57d9c" title="Konstruktor klasy SerialPortHandler." alt="" coords="5,5,149,45"/>
+<area shape="poly" title=" " alt="" coords="183,28,149,28,149,23,183,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad1c976d1336fb269a088b27baf3b4e2c" name="ad1c976d1336fb269a088b27baf3b4e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c976d1336fb269a088b27baf3b4e2c">&#9670;&#160;</a></span>refreshAvailablePorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::refreshAvailablePorts </td>
+          <td>(</td>
+          <td class="paramtype">QComboBox *&#160;</td>
+          <td class="paramname"><em>combo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Odświeża listę dostępnych portów szeregowych w podanym QComboBox.</p>
+<p>Metoda ta czyści zawartość podanego QComboBox i dodaje do niego aktualną listę dostępnych portów pobraną przez metodę <a class="el" href="classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71" title="Zwraca listę dostępnych portów szeregowych.">availablePorts()</a>.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">combo</td><td>Wskaźnik do QComboBox, który ma być zaktualizowany.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Metoda ta najpierw czyści zawartość przekazanego combo boxa, a następnie dodaje aktualnie dostępne porty, pobierając je poprzez wywołanie <a class="el" href="classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71" title="Zwraca listę dostępnych portów szeregowych.">availablePorts()</a>.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">combo</td><td>Wskaźnik do QComboBox, który ma być uaktualniony. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00247">247</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_ad1c976d1336fb269a088b27baf3b4e2c_cgraph.png" border="0" usemap="#aclassSerialPortHandler_ad1c976d1336fb269a088b27baf3b4e2c_cgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_ad1c976d1336fb269a088b27baf3b4e2c_cgraph" id="aclassSerialPortHandler_ad1c976d1336fb269a088b27baf3b4e2c_cgraph">
+<area shape="rect" title="Odświeża listę dostępnych portów szeregowych w podanym komponencie QComboBox." alt="" coords="5,5,167,45"/>
+<area shape="rect" href="classSerialPortHandler.html#a7ad695032ce4912f4a5715f322a6bf71" title="Zwraca listę dostępnych portów szeregowych." alt="" coords="215,5,359,45"/>
+<area shape="poly" title=" " alt="" coords="167,23,201,23,201,28,167,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a048c24808a4c6fb0de199df34ff141c3" name="a048c24808a4c6fb0de199df34ff141c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048c24808a4c6fb0de199df34ff141c3">&#9670;&#160;</a></span>toggleConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::toggleConnection </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>portName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nawiązuje lub zrywa połączenie z portem szeregowym.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portName</td><td>Nazwa portu, np. "COM3" lub "/dev/ttyUSB0".</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Jeśli port jest już otwarty, zostaje zamknięty. W przeciwnym wypadku zostaje otwarty w trybie tylko do odczytu z odpowiednimi parametrami transmisji.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portName</td><td>Nazwa portu szeregowego (np. COM3, ttyUSB0). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00081">81</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a048c24808a4c6fb0de199df34ff141c3_icgraph.png" border="0" usemap="#aclassSerialPortHandler_a048c24808a4c6fb0de199df34ff141c3_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a048c24808a4c6fb0de199df34ff141c3_icgraph" id="aclassSerialPortHandler_a048c24808a4c6fb0de199df34ff141c3_icgraph">
+<area shape="rect" title="Przełącza połączenie z podanym portem szeregowym." alt="" coords="467,5,611,45"/>
+<area shape="rect" href="classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="264,5,419,45"/>
+<area shape="poly" title=" " alt="" coords="453,28,419,28,419,23,453,23"/>
+<area shape="rect" href="classMainWindow.html#a74bf7ec51582db3d2d98265b66afc0cc" title="Slot obsługujący kliknięcie przycisku łączenia z wybranym portem szeregowym." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2c7923e667e2bb8b7153d7d6c2178ce" name="ab2c7923e667e2bb8b7153d7d6c2178ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c7923e667e2bb8b7153d7d6c2178ce">&#9670;&#160;</a></span>toggleReading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::toggleReading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rozpoczyna lub zatrzymuje odczyt danych z portu szeregowego.</p>
+<p>Jeśli port nie jest otwarty, zgłaszany jest błąd. W przeciwnym wypadku stan odczytu jest przełączany, a bufor odczytu czyszczony. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00108">108</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_ab2c7923e667e2bb8b7153d7d6c2178ce_icgraph.png" border="0" usemap="#aclassSerialPortHandler_ab2c7923e667e2bb8b7153d7d6c2178ce_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_ab2c7923e667e2bb8b7153d7d6c2178ce_icgraph" id="aclassSerialPortHandler_ab2c7923e667e2bb8b7153d7d6c2178ce_icgraph">
+<area shape="rect" title="Włącza lub wyłącza tryb odczytu danych z portu." alt="" coords="264,37,408,77"/>
+<area shape="rect" href="classMainWindow.html#a7a57f41cd36b4221181dc661a69954bf" title="Slot obsługujący kliknięcie przycisku rozpoczynającego odbieranie danych." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,48,216,43,216,38,251,43"/>
+<area shape="rect" href="classSerialPortHandler.html#a07aab39b7d0f21e1e4327f96480523cf" title="Przełącza tryb odczytu danych i aktualizuje wygląd przycisku Start." alt="" coords="39,69,183,109"/>
+<area shape="poly" title=" " alt="" coords="250,72,183,82,182,77,250,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a07aab39b7d0f21e1e4327f96480523cf" name="a07aab39b7d0f21e1e4327f96480523cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07aab39b7d0f21e1e4327f96480523cf">&#9670;&#160;</a></span>toggleReadingUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::toggleReadingUI </td>
+          <td>(</td>
+          <td class="paramtype">QPushButton *&#160;</td>
+          <td class="paramname"><em>btnStart</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przełącza tryb odczytu danych i aktualizuje interfejs przycisku Start.</p>
+<p>Metoda ta wywołuje funkcję toggleReading, aby zmienić tryb odczytu. Po przełączeniu czytania:</p><ul>
+<li>Jeśli tryb odczytu jest aktywny, przycisk Start zmienia tekst na "Stop".</li>
+<li>Jeśli tryb odczytu jest wyłączony, przycisk Start wraca do ustawień domyślnych ("Start" oraz zielony wygląd).</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">btnStart</td><td>Wskaźnik do przycisku Start, który wskazuje stan odczytu danych.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Metoda ta wywołuje <a class="el" href="classSerialPortHandler.html#ab2c7923e667e2bb8b7153d7d6c2178ce" title="Włącza lub wyłącza tryb odczytu danych z portu.">toggleReading()</a>, która zmienia stan trybu odczytu. Następnie na podstawie stanu odczytu:</p><ul>
+<li>Jeśli odczyt jest aktywny, przycisk Start otrzymuje etykietę "Stop".</li>
+<li>Jeśli odczyt zostaje wyłączony, przycisk Start wraca do etykiety "Start", a jego styl zostaje ustawiony na zielony z białym tekstem.</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">btnStart</td><td>Wskaźnik do przycisku Start, który służy do uruchamiania i zatrzymywania odczytu danych. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00226">226</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_a07aab39b7d0f21e1e4327f96480523cf_cgraph.png" border="0" usemap="#aclassSerialPortHandler_a07aab39b7d0f21e1e4327f96480523cf_cgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_a07aab39b7d0f21e1e4327f96480523cf_cgraph" id="aclassSerialPortHandler_a07aab39b7d0f21e1e4327f96480523cf_cgraph">
+<area shape="rect" title="Przełącza tryb odczytu danych i aktualizuje wygląd przycisku Start." alt="" coords="5,37,149,77"/>
+<area shape="rect" href="classSerialPortHandler.html#ae83bb245e7b1e8282224cbc3c1228d46" title="Sprawdza, czy aktywny jest tryb odczytu danych." alt="" coords="197,5,341,45"/>
+<area shape="poly" title=" " alt="" coords="149,43,183,37,184,42,150,48"/>
+<area shape="rect" href="classSerialPortHandler.html#ab2c7923e667e2bb8b7153d7d6c2178ce" title="Włącza lub wyłącza tryb odczytu danych z portu." alt="" coords="197,69,341,109"/>
+<area shape="poly" title=" " alt="" coords="150,67,184,72,183,78,149,72"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4248da463015244ac04710a69b4b964" name="ad4248da463015244ac04710a69b4b964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4248da463015244ac04710a69b4b964">&#9670;&#160;</a></span>updateConnectionUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SerialPortHandler::updateConnectionUI </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>portName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPushButton *&#160;</td>
+          <td class="paramname"><em>btnConnect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPushButton *&#160;</td>
+          <td class="paramname"><em>btnStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Aktualizuje interfejs użytkownika związany z połączeniem szeregowym.</p>
+<p>Metoda ta wywołuje funkcję toggleConnection, aby nawiązać lub rozłączyć połączenie według przekazanego portu. Następnie na podstawie stanu połączenia aktualizuje tekst przycisków:</p><ul>
+<li>Jeśli połączenie jest aktywne, ustawia przycisk Connect na "Disconnect" oraz włącza przycisk Start.</li>
+<li>W przeciwnym wypadku ustawia przycisk Connect na "Connect", przycisk Start na "Start", modyfikuje jego wygląd (zielone tło, biały tekst) i dezaktywuje go.</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portName</td><td>Nazwa portu, który ma być użyty do połączenia/rozłączenia. </td></tr>
+    <tr><td class="paramname">btnConnect</td><td>Wskaźnik do przycisku odpowiedzialnego za łączenie/rozłączanie. </td></tr>
+    <tr><td class="paramname">btnStart</td><td>Wskaźnik do przycisku odpowiedzialnego za rozruch odczytu danych.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Metoda ta przełącza stan połączenia poprzez wywołanie toggleConnection z przekazanym portem. Następnie sprawdza, czy połączenie zostało pomyślnie ustanowione:</p><ul>
+<li>W przypadku aktywnego połączenia, przycisk Connect zmieniany jest na "Disconnect", a przycisk Start zostaje włączony.</li>
+<li>W przeciwnym razie, przycisk Connect przyjmuje etykietę "Connect", przycisk Start zostaje zresetowany do etykiety "Start", ustawiony na zielony kolor tła (biały tekst) i wyłączony.</li>
+</ul>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portName</td><td>Nazwa portu, który ma być użyty do połączenia/rozłączenia. </td></tr>
+    <tr><td class="paramname">btnConnect</td><td>Wskaźnik do przycisku odpowiedzialnego za obsługę połączenia. </td></tr>
+    <tr><td class="paramname">btnStart</td><td>Wskaźnik do przycisku odpowiedzialnego za uruchomienie odczytu danych. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8cpp_source.html#l00200">200</a> pliku <a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_ad4248da463015244ac04710a69b4b964_cgraph.png" border="0" usemap="#aclassSerialPortHandler_ad4248da463015244ac04710a69b4b964_cgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_ad4248da463015244ac04710a69b4b964_cgraph" id="aclassSerialPortHandler_ad4248da463015244ac04710a69b4b964_cgraph">
+<area shape="rect" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="5,37,160,77"/>
+<area shape="rect" href="classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b" title="Sprawdza, czy połączenie z portem szeregowym jest aktywne." alt="" coords="208,5,352,45"/>
+<area shape="poly" title=" " alt="" coords="160,42,194,37,195,42,161,47"/>
+<area shape="rect" href="classSerialPortHandler.html#a048c24808a4c6fb0de199df34ff141c3" title="Przełącza połączenie z podanym portem szeregowym." alt="" coords="208,69,352,109"/>
+<area shape="poly" title=" " alt="" coords="161,67,195,73,194,78,160,73"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSerialPortHandler_ad4248da463015244ac04710a69b4b964_icgraph.png" border="0" usemap="#aclassSerialPortHandler_ad4248da463015244ac04710a69b4b964_icgraph" alt=""/></div>
+<map name="aclassSerialPortHandler_ad4248da463015244ac04710a69b4b964_icgraph" id="aclassSerialPortHandler_ad4248da463015244ac04710a69b4b964_icgraph">
+<area shape="rect" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="264,5,419,45"/>
+<area shape="rect" href="classMainWindow.html#a74bf7ec51582db3d2d98265b66afc0cc" title="Slot obsługujący kliknięcie przycisku łączenia z wybranym portem szeregowym." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="aa46dbe4db812538f81f5224ec782246e" name="aa46dbe4db812538f81f5224ec782246e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46dbe4db812538f81f5224ec782246e">&#9670;&#160;</a></span>m_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray SerialPortHandler::m_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00132">132</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4398458cada3a9cc51ca71f6eda3eb0" name="ad4398458cada3a9cc51ca71f6eda3eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4398458cada3a9cc51ca71f6eda3eb0">&#9670;&#160;</a></span>m_firstMeasurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialPortHandler::m_firstMeasurement = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00130">130</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a61a2e270f020be6a774d10e5fe4ba6cd" name="a61a2e270f020be6a774d10e5fe4ba6cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a2e270f020be6a774d10e5fe4ba6cd">&#9670;&#160;</a></span>m_lastX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SerialPortHandler::m_lastX = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00127">127</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a27165d79e8899378281e4d72aa8fe0fa" name="a27165d79e8899378281e4d72aa8fe0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27165d79e8899378281e4d72aa8fe0fa">&#9670;&#160;</a></span>m_lastY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SerialPortHandler::m_lastY = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00128">128</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad6cae5932fed61bfcf372d8e22f67a2e" name="ad6cae5932fed61bfcf372d8e22f67a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6cae5932fed61bfcf372d8e22f67a2e">&#9670;&#160;</a></span>m_lastZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SerialPortHandler::m_lastZ = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00129">129</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a428a6e13f99301d3a2b8243d41074bea" name="a428a6e13f99301d3a2b8243d41074bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428a6e13f99301d3a2b8243d41074bea">&#9670;&#160;</a></span>m_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort SerialPortHandler::m_port</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00131">131</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a082f29e4dd2474c815bd6c73fe208910" name="a082f29e4dd2474c815bd6c73fe208910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082f29e4dd2474c815bd6c73fe208910">&#9670;&#160;</a></span>m_reading</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SerialPortHandler::m_reading = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="SerialPortHandler_8hpp_source.html#l00133">133</a> pliku <a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="SerialPortHandler_8hpp_source.html">SerialPortHandler.hpp</a></li>
+<li><a class="el" href="SerialPortHandler_8cpp_source.html">SerialPortHandler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classSerialPortHandler.html">SerialPortHandler</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

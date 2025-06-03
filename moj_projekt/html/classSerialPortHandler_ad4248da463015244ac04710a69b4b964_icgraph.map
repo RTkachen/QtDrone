@@ -1,0 +1,5 @@
+<map id="SerialPortHandler::updateConnectionUI" name="SerialPortHandler::updateConnectionUI">
+<area shape="rect" id="Node000001" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="264,5,419,45"/>
+<area shape="rect" id="Node000002" href="$classMainWindow.html#a74bf7ec51582db3d2d98265b66afc0cc" title="Slot obsługujący kliknięcie przycisku łączenia z wybranym portem szeregowym." alt="" coords="5,5,216,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>

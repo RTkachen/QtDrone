@@ -1,0 +1,7 @@
+<map id="SpinBoxController::updateAll" name="SpinBoxController::updateAll">
+<area shape="rect" id="Node000001" title="Aktualizuje wartości we wszystkich trzech spinboxach." alt="" coords="251,27,397,67"/>
+<area shape="rect" id="Node000002" href="$classMainWindow.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor MainWindow." alt="" coords="5,5,203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,38,199,33,200,28,237,33"/>
+<area shape="rect" id="Node000003" href="$classSpinBoxController.html#a83f53353c6f782d6b70616ec35f16535" title="Konstruktor kontrolera." alt="" coords="31,55,177,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,61,178,69,177,63,237,56"/>
+</map>

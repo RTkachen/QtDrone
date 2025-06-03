@@ -1,0 +1,5 @@
+<map id="SerialPortHandler::onReadyRead" name="SerialPortHandler::onReadyRead">
+<area shape="rect" id="Node000001" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="197,5,341,45"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#a658dff23f3feb1250f3a6a241da57d9c" title="Konstruktor klasy SerialPortHandler." alt="" coords="5,5,149,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,28,149,28,149,23,183,23"/>
+</map>

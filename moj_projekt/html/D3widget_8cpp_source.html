@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Plik źródłowy D3widget.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('D3widget_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">D3widget.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="D3widget_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="D3widget_8hpp.html">D3widget.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Współrzędne wierzchołków prostopadłościanu (8 punktów)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Każdy wierzchołek: pozycja (x,y,z) oraz kolor (r,g,b)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">static</span> <span class="keyword">const</span> GLfloat vertices[] = {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// Front face (z = +0.75) - czerwony</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    -0.5f, -0.3f, +0.75f,   1.0f, 0.0f, 0.0f, <span class="comment">// 0</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    0.5f, -0.3f, +0.75f,   1.0f, 0.0f, 0.0f, <span class="comment">// 1</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    0.5f, +0.3f, +0.75f,   1.0f, 0.0f, 0.0f, <span class="comment">// 2</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    -0.5f, +0.3f, +0.75f,   1.0f, 0.0f, 0.0f, <span class="comment">// 3</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// Back face (z = -0.75) - zielony</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    -0.5f, -0.3f, -0.75f,   0.0f, 1.0f, 0.0f, <span class="comment">// 4</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    -0.5f, +0.3f, -0.75f,   0.0f, 1.0f, 0.0f, <span class="comment">// 5</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    0.5f, +0.3f, -0.75f,   0.0f, 1.0f, 0.0f, <span class="comment">// 6</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    0.5f, -0.3f, -0.75f,   0.0f, 1.0f, 0.0f, <span class="comment">// 7</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// Left face (x = -0.5) - niebieski</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    -0.5f, -0.3f, -0.75f,   0.0f, 0.0f, 1.0f, <span class="comment">// 8</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    -0.5f, -0.3f, +0.75f,   0.0f, 0.0f, 1.0f, <span class="comment">// 9</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    -0.5f, +0.3f, +0.75f,   0.0f, 0.0f, 1.0f, <span class="comment">// 10</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    -0.5f, +0.3f, -0.75f,   0.0f, 0.0f, 1.0f, <span class="comment">// 11</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// Right face (x = +0.5) - żółty</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    0.5f, -0.3f, +0.75f,   1.0f, 1.0f, 0.0f, <span class="comment">// 12</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    0.5f, -0.3f, -0.75f,   1.0f, 1.0f, 0.0f, <span class="comment">// 13</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    0.5f, +0.3f, -0.75f,   1.0f, 1.0f, 0.0f, <span class="comment">// 14</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    0.5f, +0.3f, +0.75f,   1.0f, 1.0f, 0.0f, <span class="comment">// 15</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// Top face (y = +0.3) - cyjan</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    -0.5f, +0.3f, +0.75f,   0.0f, 1.0f, 1.0f, <span class="comment">// 16</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    0.5f, +0.3f, +0.75f,   0.0f, 1.0f, 1.0f, <span class="comment">// 17</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    0.5f, +0.3f, -0.75f,   0.0f, 1.0f, 1.0f, <span class="comment">// 18</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    -0.5f, +0.3f, -0.75f,   0.0f, 1.0f, 1.0f, <span class="comment">// 19</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// Bottom face (y = -0.3) - magenta</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    -0.5f, -0.3f, +0.75f,   1.0f, 0.0f, 1.0f, <span class="comment">// 20</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    0.5f, -0.3f, +0.75f,   1.0f, 0.0f, 1.0f, <span class="comment">// 21</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    0.5f, -0.3f, -0.75f,   1.0f, 0.0f, 1.0f, <span class="comment">// 22</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    -0.5f, -0.3f, -0.75f,   1.0f, 0.0f, 1.0f  <span class="comment">// 23</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// Indeksy do narysowania 12 trójkątów (6 ścian po dwa trójkąty)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">static</span> <span class="keyword">const</span> GLuint indices[] = {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Front face</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    0,  1, 2,   2,  3, 0,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Back face</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    4,  5, 6,   6,  7, 4,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// Left face</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    8,  9,10,  10, 11, 8,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Right face</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    12, 13,14,  14, 15,12,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// Top face</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    16, 17,18,  18, 19,16,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Bottom face</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    20, 21,22,  22, 23,20,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classD3widget.html#a94d249e7ee91eb20a264b62b005b120b">   59</a></span><a class="code hl_function" href="classD3widget.html#a94d249e7ee91eb20a264b62b005b120b">D3widget::D3widget</a>(QWidget* parent)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    : QOpenGLWidget(parent)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    , m_vao(0), m_vbo(0), m_ebo(0)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    , m_pitch(0), m_roll(0)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classD3widget.html#a57f11d3c6caa00e7dc47ab613f1f6b0f">   65</a></span><a class="code hl_function" href="classD3widget.html#a57f11d3c6caa00e7dc47ab613f1f6b0f">D3widget::~D3widget</a>(){</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    makeCurrent();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    glDeleteBuffers(1, &amp;<a class="code hl_variable" href="classD3widget.html#aea9ebb1fad3285d1e3a191e50d11a879">m_vbo</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    glDeleteBuffers(1, &amp;<a class="code hl_variable" href="classD3widget.html#abf3b951aca0fae047e9779ec9ce635d2">m_ebo</a>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    glDeleteVertexArrays(1, &amp;<a class="code hl_variable" href="classD3widget.html#a7a1d58d76c3c4b73132630229b539611">m_vao</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    doneCurrent();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classD3widget.html#a7ffce48c919361b5b3b1bc8000dff4a6">   73</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classD3widget.html#a7ffce48c919361b5b3b1bc8000dff4a6">D3widget::initializeGL</a>(){</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    initializeOpenGLFunctions();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    glClearColor(0.9f, 0.9f, 0.9f, 1.0f);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    glEnable(GL_DEPTH_TEST);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="classD3widget.html#ab784e4dae98caa8f7ffb305ed4660013">initShaders</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="classD3widget.html#aeac10e54b5257dd315a27519e8468ca8">initGeometry</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classD3widget.html#ab784e4dae98caa8f7ffb305ed4660013">   81</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classD3widget.html#ab784e4dae98caa8f7ffb305ed4660013">D3widget::initShaders</a>(){</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_variable" href="classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26">m_program</a>.addShaderFromSourceCode(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        QOpenGLShader::Vertex,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="stringliteral">&quot;#version 330 core\n&quot;</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="stringliteral">&quot;layout(location = 0) in vec3 aPos;\n&quot;</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="stringliteral">&quot;layout(location = 1) in vec3 aColor;\n&quot;</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="stringliteral">&quot;uniform mat4 u_mvp;\n&quot;</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="stringliteral">&quot;out vec3 vColor;\n&quot;</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="stringliteral">&quot;void main(){\n&quot;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="stringliteral">&quot;    gl_Position = u_mvp * vec4(aPos, 1.0);\n&quot;</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="stringliteral">&quot;    vColor = aColor;\n&quot;</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        );</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_variable" href="classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26">m_program</a>.addShaderFromSourceCode(</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        QOpenGLShader::Fragment,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="stringliteral">&quot;#version 330 core\n&quot;</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="stringliteral">&quot;in vec3 vColor;\n&quot;</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="stringliteral">&quot;out vec4 FragColor;\n&quot;</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="stringliteral">&quot;void main(){\n&quot;</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="stringliteral">&quot;    FragColor = vec4(vColor, 1.0);\n&quot;</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="stringliteral">&quot;}&quot;</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        );</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_variable" href="classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26">m_program</a>.link();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classD3widget.html#aeac10e54b5257dd315a27519e8468ca8">  106</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classD3widget.html#aeac10e54b5257dd315a27519e8468ca8">D3widget::initGeometry</a>(){</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    glGenVertexArrays(1, &amp;<a class="code hl_variable" href="classD3widget.html#a7a1d58d76c3c4b73132630229b539611">m_vao</a>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    glBindVertexArray(<a class="code hl_variable" href="classD3widget.html#a7a1d58d76c3c4b73132630229b539611">m_vao</a>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    glGenBuffers(1, &amp;<a class="code hl_variable" href="classD3widget.html#aea9ebb1fad3285d1e3a191e50d11a879">m_vbo</a>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    glBindBuffer(GL_ARRAY_BUFFER, <a class="code hl_variable" href="classD3widget.html#aea9ebb1fad3285d1e3a191e50d11a879">m_vbo</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(vertices), vertices, GL_STATIC_DRAW);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    glGenBuffers(1, &amp;<a class="code hl_variable" href="classD3widget.html#abf3b951aca0fae047e9779ec9ce635d2">m_ebo</a>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, <a class="code hl_variable" href="classD3widget.html#abf3b951aca0fae047e9779ec9ce635d2">m_ebo</a>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    glBufferData(GL_ELEMENT_ARRAY_BUFFER, <span class="keyword">sizeof</span>(indices), indices, GL_STATIC_DRAW);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="comment">// Atrybut pozycji: lokalizacja 0, 3 składowe, stride = 6 * sizeof(GLfloat)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    glEnableVertexAttribArray(0);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * <span class="keyword">sizeof</span>(GLfloat), (<span class="keywordtype">void</span>*)0);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">// Atrybut koloru: lokalizacja 1, 3 składowe, offset = 3 * sizeof(GLfloat)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    glEnableVertexAttribArray(1);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * <span class="keyword">sizeof</span>(GLfloat), (<span class="keywordtype">void</span>*)(3 * <span class="keyword">sizeof</span>(GLfloat)));</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    glBindVertexArray(0);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classD3widget.html#a02e99c416494b874c94e35fb34c8290a">  129</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classD3widget.html#a02e99c416494b874c94e35fb34c8290a">D3widget::resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h){</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">float</span> aspect = float(w)/float(h? h:1);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_variable" href="classD3widget.html#a3f23247d93228306ae39df52976cdf04">m_projection</a>.setToIdentity();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <a class="code hl_variable" href="classD3widget.html#a3f23247d93228306ae39df52976cdf04">m_projection</a>.perspective(45.0f, aspect, 0.1f, 100.0f);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
+</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classD3widget.html#acf75aec0441a497c3d176bf231240ca3">  135</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classD3widget.html#acf75aec0441a497c3d176bf231240ca3">D3widget::paintGL</a>(){</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    QMatrix4x4 view;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    view.translate(0,0,-5);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    view.rotate(<a class="code hl_variable" href="classD3widget.html#ad2012ec012f8b88c004f2bba4ab136e0">m_pitch</a> * 180.0f/M_PI, -1,0,0);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    view.rotate(<a class="code hl_variable" href="classD3widget.html#a3104d077e058a4e6b80e574d2dfb6195">m_roll</a>  * 180.0f/M_PI, 0,0,1);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    QMatrix4x4 mvp = <a class="code hl_variable" href="classD3widget.html#a3f23247d93228306ae39df52976cdf04">m_projection</a> * view;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_variable" href="classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26">m_program</a>.bind();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_variable" href="classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26">m_program</a>.setUniformValue(<span class="stringliteral">&quot;u_mvp&quot;</span>, mvp);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    glBindVertexArray(<a class="code hl_variable" href="classD3widget.html#a7a1d58d76c3c4b73132630229b539611">m_vao</a>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    glDrawElements(GL_TRIANGLES, <span class="keyword">sizeof</span>(indices)/<span class="keyword">sizeof</span>(GLuint),</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                   GL_UNSIGNED_INT, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    glBindVertexArray(0);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classD3widget.html#a8a599cb963bc0ad8a113b09c446aeca3">  153</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classD3widget.html#a8a599cb963bc0ad8a113b09c446aeca3">D3widget::setRotationAngles</a>(<span class="keywordtype">float</span> pitch, <span class="keywordtype">float</span> roll){</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_variable" href="classD3widget.html#ad2012ec012f8b88c004f2bba4ab136e0">m_pitch</a> = pitch;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_variable" href="classD3widget.html#a3104d077e058a4e6b80e574d2dfb6195">m_roll</a>  = roll;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    update();  <span class="comment">// wymuś repaint</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
+</div>
+<div class="ttc" id="aD3widget_8hpp_html"><div class="ttname"><a href="D3widget_8hpp.html">D3widget.hpp</a></div><div class="ttdoc">Komponent OpenGL odpowiedzialny za wyświetlanie i obracanie obiektu 3D.</div></div>
+<div class="ttc" id="aclassD3widget_html_a02e99c416494b874c94e35fb34c8290a"><div class="ttname"><a href="classD3widget.html#a02e99c416494b874c94e35fb34c8290a">D3widget::resizeGL</a></div><div class="ttdeci">void resizeGL(int w, int h) override</div><div class="ttdoc">Przeskalowanie widoku w przypadku zmiany rozmiaru okna.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00129">D3widget.cpp:129</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a1957d6f58428417d8e31c2d5aa495d26"><div class="ttname"><a href="classD3widget.html#a1957d6f58428417d8e31c2d5aa495d26">D3widget::m_program</a></div><div class="ttdeci">QOpenGLShaderProgram m_program</div><div class="ttdoc">Program shaderów (vertex + fragment)</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00074">D3widget.hpp:74</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a3104d077e058a4e6b80e574d2dfb6195"><div class="ttname"><a href="classD3widget.html#a3104d077e058a4e6b80e574d2dfb6195">D3widget::m_roll</a></div><div class="ttdeci">float m_roll</div><div class="ttdoc">Kąt obrotu wokół osi Y.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00080">D3widget.hpp:80</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a3f23247d93228306ae39df52976cdf04"><div class="ttname"><a href="classD3widget.html#a3f23247d93228306ae39df52976cdf04">D3widget::m_projection</a></div><div class="ttdeci">QMatrix4x4 m_projection</div><div class="ttdoc">Macierz projekcji perspektywicznej.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00078">D3widget.hpp:78</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a57f11d3c6caa00e7dc47ab613f1f6b0f"><div class="ttname"><a href="classD3widget.html#a57f11d3c6caa00e7dc47ab613f1f6b0f">D3widget::~D3widget</a></div><div class="ttdeci">~D3widget() override</div><div class="ttdoc">Destruktor wirtualny – zwalnia zasoby OpenGL.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00065">D3widget.cpp:65</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a7a1d58d76c3c4b73132630229b539611"><div class="ttname"><a href="classD3widget.html#a7a1d58d76c3c4b73132630229b539611">D3widget::m_vao</a></div><div class="ttdeci">GLuint m_vao</div><div class="ttdoc">Vertex Array Object.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00075">D3widget.hpp:75</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a7ffce48c919361b5b3b1bc8000dff4a6"><div class="ttname"><a href="classD3widget.html#a7ffce48c919361b5b3b1bc8000dff4a6">D3widget::initializeGL</a></div><div class="ttdeci">void initializeGL() override</div><div class="ttdoc">Inicjalizacja kontekstu OpenGL – kompilacja shaderów i buforów.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00073">D3widget.cpp:73</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a8a599cb963bc0ad8a113b09c446aeca3"><div class="ttname"><a href="classD3widget.html#a8a599cb963bc0ad8a113b09c446aeca3">D3widget::setRotationAngles</a></div><div class="ttdeci">void setRotationAngles(float pitch, float roll)</div><div class="ttdoc">Ustawia kąty obrotu wokół osi X (pitch) i Y (roll) w radianach.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00153">D3widget.cpp:153</a></div></div>
+<div class="ttc" id="aclassD3widget_html_a94d249e7ee91eb20a264b62b005b120b"><div class="ttname"><a href="classD3widget.html#a94d249e7ee91eb20a264b62b005b120b">D3widget::D3widget</a></div><div class="ttdeci">D3widget(QWidget *parent=nullptr)</div><div class="ttdoc">Konstruktor klasy D3widget.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00059">D3widget.cpp:59</a></div></div>
+<div class="ttc" id="aclassD3widget_html_ab784e4dae98caa8f7ffb305ed4660013"><div class="ttname"><a href="classD3widget.html#ab784e4dae98caa8f7ffb305ed4660013">D3widget::initShaders</a></div><div class="ttdeci">void initShaders()</div><div class="ttdoc">Inicjalizuje i kompiluje program shaderów.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00081">D3widget.cpp:81</a></div></div>
+<div class="ttc" id="aclassD3widget_html_abf3b951aca0fae047e9779ec9ce635d2"><div class="ttname"><a href="classD3widget.html#abf3b951aca0fae047e9779ec9ce635d2">D3widget::m_ebo</a></div><div class="ttdeci">GLuint m_ebo</div><div class="ttdoc">Element Buffer Object.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00077">D3widget.hpp:77</a></div></div>
+<div class="ttc" id="aclassD3widget_html_acf75aec0441a497c3d176bf231240ca3"><div class="ttname"><a href="classD3widget.html#acf75aec0441a497c3d176bf231240ca3">D3widget::paintGL</a></div><div class="ttdeci">void paintGL() override</div><div class="ttdoc">Główna funkcja rysująca scenę 3D.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00135">D3widget.cpp:135</a></div></div>
+<div class="ttc" id="aclassD3widget_html_ad2012ec012f8b88c004f2bba4ab136e0"><div class="ttname"><a href="classD3widget.html#ad2012ec012f8b88c004f2bba4ab136e0">D3widget::m_pitch</a></div><div class="ttdeci">float m_pitch</div><div class="ttdoc">Kąt obrotu wokół osi X.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00079">D3widget.hpp:79</a></div></div>
+<div class="ttc" id="aclassD3widget_html_aea9ebb1fad3285d1e3a191e50d11a879"><div class="ttname"><a href="classD3widget.html#aea9ebb1fad3285d1e3a191e50d11a879">D3widget::m_vbo</a></div><div class="ttdeci">GLuint m_vbo</div><div class="ttdoc">Vertex Buffer Object.</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8hpp_source.html#l00076">D3widget.hpp:76</a></div></div>
+<div class="ttc" id="aclassD3widget_html_aeac10e54b5257dd315a27519e8468ca8"><div class="ttname"><a href="classD3widget.html#aeac10e54b5257dd315a27519e8468ca8">D3widget::initGeometry</a></div><div class="ttdeci">void initGeometry()</div><div class="ttdoc">Inicjalizuje geometrię prostopadłościanu (VAO, VBO, EBO).</div><div class="ttdef"><b>Definition</b> <a href="D3widget_8cpp_source.html#l00106">D3widget.cpp:106</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="D3widget_8cpp.html">D3widget.cpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

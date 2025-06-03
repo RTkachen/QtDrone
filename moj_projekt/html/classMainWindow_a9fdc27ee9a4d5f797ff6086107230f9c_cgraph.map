@@ -1,0 +1,11 @@
+<map id="MainWindow::on_pushButtonCharts_clicked" name="MainWindow::on_pushButtonCharts_clicked">
+<area shape="rect" id="Node000001" title="Slot obsługujący kliknięcie przycisku otwierającego okno wykresów." alt="" coords="5,5,216,45"/>
+<area shape="rect" id="Node000002" href="$classChartWindow.html#a4921e9dab0975565a30e07137226aeb5" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="264,13,499,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,23,251,23,251,28,216,28"/>
+<area shape="rect" id="Node000003" href="$classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="547,13,739,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,23,533,23,533,28,499,28"/>
+<area shape="rect" id="Node000004" href="$classChartWindow.html#af90550b6cc4930860091807ccabb7976" title="Dodaje dane do wykresów." alt="" coords="787,13,957,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="739,23,773,23,773,28,739,28"/>
+<area shape="rect" id="Node000005" href="$classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="1005,13,1224,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="958,23,992,23,992,28,958,28"/>
+</map>

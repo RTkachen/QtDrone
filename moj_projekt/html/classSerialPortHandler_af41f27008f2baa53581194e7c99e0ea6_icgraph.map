@@ -1,0 +1,7 @@
+<map id="SerialPortHandler::computeCRC" name="SerialPortHandler::computeCRC">
+<area shape="rect" id="Node000001" title="Oblicza 8&#45;bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2&#45;znakowy HEX." alt="" coords="389,5,533,45"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#a4902df7cdae4a5c87c06d063787fac97" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="197,5,341,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="375,28,341,28,341,23,375,23"/>
+<area shape="rect" id="Node000003" href="$classSerialPortHandler.html#a658dff23f3feb1250f3a6a241da57d9c" title="Konstruktor klasy SerialPortHandler." alt="" coords="5,5,149,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="183,28,149,28,149,23,183,23"/>
+</map>

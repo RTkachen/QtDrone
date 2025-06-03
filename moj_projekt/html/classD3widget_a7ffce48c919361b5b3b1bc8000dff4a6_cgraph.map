@@ -1,0 +1,7 @@
+<map id="D3widget::initializeGL" name="D3widget::initializeGL">
+<area shape="rect" id="Node000001" title="Inicjalizacja kontekstu OpenGL – kompilacja shaderów i buforów." alt="" coords="5,31,171,56"/>
+<area shape="rect" id="Node000002" href="$classD3widget.html#aeac10e54b5257dd315a27519e8468ca8" title="Inicjalizuje geometrię prostopadłościanu (VAO, VBO, EBO)." alt="" coords="219,5,397,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,31,205,27,205,32,171,36"/>
+<area shape="rect" id="Node000003" href="$classD3widget.html#ab784e4dae98caa8f7ffb305ed4660013" title="Inicjalizuje i kompiluje program shaderów." alt="" coords="225,55,391,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,50,212,54,211,59,171,55"/>
+</map>

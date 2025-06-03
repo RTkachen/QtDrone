@@ -1,0 +1,8 @@
+<map id="SimulationController" name="SimulationController">
+<area shape="rect" id="Node000001" title="Kontroler symulacji akcelerometru." alt="" coords="5,168,161,193"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="41,5,115,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,44,86,168,80,168,76,45"/>
+<area shape="rect" id="Node000003" href="$classAccSimulator.html" title="Klasa generująca dane symulacyjne XYZ." alt="" coords="100,80,208,105"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="102,38,143,78,140,81,98,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,118,95,169,91,166,134,114"/>
+</map>

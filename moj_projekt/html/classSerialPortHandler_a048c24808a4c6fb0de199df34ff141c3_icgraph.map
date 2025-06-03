@@ -1,0 +1,7 @@
+<map id="SerialPortHandler::toggleConnection" name="SerialPortHandler::toggleConnection">
+<area shape="rect" id="Node000001" title="Przełącza połączenie z podanym portem szeregowym." alt="" coords="467,5,611,45"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#ad4248da463015244ac04710a69b4b964" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="264,5,419,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="453,28,419,28,419,23,453,23"/>
+<area shape="rect" id="Node000003" href="$classMainWindow.html#a74bf7ec51582db3d2d98265b66afc0cc" title="Slot obsługujący kliknięcie przycisku łączenia z wybranym portem szeregowym." alt="" coords="5,5,216,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>

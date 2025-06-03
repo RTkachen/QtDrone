@@ -1,0 +1,13 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,104,80,129"/>
+<area shape="rect" id="Node000001" href="$classAccSimulator.html" title="Klasa generująca dane symulacyjne XYZ." alt="" coords="152,5,260,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="63,92,91,65,127,40,152,28,155,33,129,44,95,69,66,96"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru." alt="" coords="138,55,274,80"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="93,99,162,78,164,83,94,104"/>
+<area shape="rect" id="Node000003" href="$classSimulationController.html" title="Kontroler symulacji akcelerometru." alt="" coords="128,104,284,129"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="94,114,128,114,128,119,94,119"/>
+<area shape="rect" id="Node000004" href="$classSpinBoxController.html" title="Klasa zarządzająca trzema QDoubleSpinBox pokazującymi wartości akcelerometru." alt="" coords="137,153,275,179"/>
+<area shape="poly" id="edge5_Node000000_Node000004" title=" " alt="" coords="94,129,164,151,162,156,93,134"/>
+<area shape="rect" id="Node000005" href="$classTranslator.html" title="Klasa Translator odpowiedzialna za dynamiczne przełączanie języka GUI." alt="" coords="163,203,249,228"/>
+<area shape="poly" id="edge6_Node000000_Node000005" title=" " alt="" coords="67,138,95,164,129,188,163,202,161,207,127,192,92,168,63,142"/>
+</map>

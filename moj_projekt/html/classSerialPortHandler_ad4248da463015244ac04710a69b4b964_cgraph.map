@@ -1,0 +1,7 @@
+<map id="SerialPortHandler::updateConnectionUI" name="SerialPortHandler::updateConnectionUI">
+<area shape="rect" id="Node000001" title="Aktualizuje interfejs użytkownika w związku z połączeniem z portem szeregowym." alt="" coords="5,37,160,77"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#a58cb47d620d267cec4e1e797fe23323b" title="Sprawdza, czy połączenie z portem szeregowym jest aktywne." alt="" coords="208,5,352,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,42,194,37,195,42,161,47"/>
+<area shape="rect" id="Node000003" href="$classSerialPortHandler.html#a048c24808a4c6fb0de199df34ff141c3" title="Przełącza połączenie z podanym portem szeregowym." alt="" coords="208,69,352,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,195,73,194,78,160,73"/>
+</map>

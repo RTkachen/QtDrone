@@ -1,0 +1,9 @@
+<map id="ChartWindow::addData" name="ChartWindow::addData">
+<area shape="rect" id="Node000001" title="Dodaje dane do wykresów." alt="" coords="787,13,957,38"/>
+<area shape="rect" id="Node000002" href="$classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="547,13,739,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="773,28,739,28,739,23,773,23"/>
+<area shape="rect" id="Node000003" href="$classChartWindow.html#a4921e9dab0975565a30e07137226aeb5" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="264,13,499,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="533,28,499,28,499,23,533,23"/>
+<area shape="rect" id="Node000004" href="$classMainWindow.html#a9fdc27ee9a4d5f797ff6086107230f9c" title="Slot obsługujący kliknięcie przycisku otwierającego okno wykresów." alt="" coords="5,5,216,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>

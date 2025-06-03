@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radomyr TKachenko WDS: Dokumentacja klasy ChartWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Radomyr TKachenko WDS<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Manewrysta</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classChartWindow.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classChartWindow-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy ChartWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a> odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.  
+ <a href="classChartWindow.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla ChartWindow</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow__inherit__graph.png" border="0" usemap="#aChartWindow_inherit__map" alt="Inheritance graph"/></div>
+<map name="aChartWindow_inherit__map" id="aChartWindow_inherit__map">
+<area shape="rect" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z." alt="" coords="5,79,115,104"/>
+<area shape="rect" title=" " alt="" coords="21,5,99,31"/>
+<area shape="poly" title=" " alt="" coords="63,44,63,79,57,79,57,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla ChartWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow__coll__graph.png" border="0" usemap="#aChartWindow_coll__map" alt="Collaboration graph"/></div>
+<map name="aChartWindow_coll__map" id="aChartWindow_coll__map">
+<area shape="rect" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z." alt="" coords="5,79,115,104"/>
+<area shape="rect" title=" " alt="" coords="21,5,99,31"/>
+<area shape="poly" title=" " alt="" coords="63,44,63,79,57,79,57,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:a445f875cd6c4cbe82e357e18ae6d7fd8" id="r_a445f875cd6c4cbe82e357e18ae6d7fd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8">updateData</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a445f875cd6c4cbe82e357e18ae6d7fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje dane wykresów na podstawie otrzymanych wartości.  <br /></td></tr>
+<tr class="separator:a445f875cd6c4cbe82e357e18ae6d7fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0fa28c64e8a2e4ee8da8ac42b855ec3" id="r_af0fa28c64e8a2e4ee8da8ac42b855ec3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#af0fa28c64e8a2e4ee8da8ac42b855ec3">updateTranslations</a> ()</td></tr>
+<tr class="memdesc:af0fa28c64e8a2e4ee8da8ac42b855ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje tłumaczenia interfejsu okna wykresów.  <br /></td></tr>
+<tr class="separator:af0fa28c64e8a2e4ee8da8ac42b855ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a898138e91e25646ddbcce42ebe88d3d5" id="r_a898138e91e25646ddbcce42ebe88d3d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a898138e91e25646ddbcce42ebe88d3d5">ChartWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a898138e91e25646ddbcce42ebe88d3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a>. Tworzy interfejs użytkownika i ustawia trzy wykresy, przy czym każdy wykres dla osi X, Y i Z. Ustawienia wykresów, takie jak zakres osi i tytuły, są tłumaczalne (wykorzystuje QObject::tr()).  <br /></td></tr>
+<tr class="separator:a898138e91e25646ddbcce42ebe88d3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9714c04a78085f4a64559008c5fe39e9" id="r_a9714c04a78085f4a64559008c5fe39e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a9714c04a78085f4a64559008c5fe39e9">~ChartWindow</a> ()</td></tr>
+<tr class="memdesc:a9714c04a78085f4a64559008c5fe39e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a>.  <br /></td></tr>
+<tr class="separator:a9714c04a78085f4a64559008c5fe39e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a4921e9dab0975565a30e07137226aeb5" id="r_a4921e9dab0975565a30e07137226aeb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5">openChartWindow</a> (QObject *serialHandler)</td></tr>
+<tr class="memdesc:a4921e9dab0975565a30e07137226aeb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statyczna metoda otwierająca okno wykresów.  <br /></td></tr>
+<tr class="separator:a4921e9dab0975565a30e07137226aeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:aef448551c02f8ff48232d023ca532c8d" id="r_aef448551c02f8ff48232d023ca532c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#aef448551c02f8ff48232d023ca532c8d">setupChart</a> (int index, const QString &amp;title)</td></tr>
+<tr class="memdesc:aef448551c02f8ff48232d023ca532c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje wykres dla danej serii.  <br /></td></tr>
+<tr class="separator:aef448551c02f8ff48232d023ca532c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90550b6cc4930860091807ccabb7976" id="r_af90550b6cc4930860091807ccabb7976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#af90550b6cc4930860091807ccabb7976">addData</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:af90550b6cc4930860091807ccabb7976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje dane do wykresów.  <br /></td></tr>
+<tr class="separator:af90550b6cc4930860091807ccabb7976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6fe2f85301649e5b1ad3eaab9aab2e" id="r_aaa6fe2f85301649e5b1ad3eaab9aab2e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e">getCurrentTime</a> () const</td></tr>
+<tr class="memdesc:aaa6fe2f85301649e5b1ad3eaab9aab2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza aktualny czas w sekundach na podstawie liczby próbek.  <br /></td></tr>
+<tr class="separator:aaa6fe2f85301649e5b1ad3eaab9aab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:aa5b7848a04ff1432fe842398ab54dae9" id="r_aa5b7848a04ff1432fe842398ab54dae9"><td class="memItemLeft" align="right" valign="top">Ui::ChartWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#aa5b7848a04ff1432fe842398ab54dae9">ui</a></td></tr>
+<tr class="separator:aa5b7848a04ff1432fe842398ab54dae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d770318d122d2c79b539230a61566cb" id="r_a4d770318d122d2c79b539230a61566cb"><td class="memItemLeft" align="right" valign="top">QChartView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a4d770318d122d2c79b539230a61566cb">chartViews</a> [3]</td></tr>
+<tr class="separator:a4d770318d122d2c79b539230a61566cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3224f07eabf0d2424b440a0eb2bd5eca" id="r_a3224f07eabf0d2424b440a0eb2bd5eca"><td class="memItemLeft" align="right" valign="top">QLineSeries *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a3224f07eabf0d2424b440a0eb2bd5eca">series</a> [3]</td></tr>
+<tr class="separator:a3224f07eabf0d2424b440a0eb2bd5eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873ff371030a2d22c8d735231ec350f2" id="r_a873ff371030a2d22c8d735231ec350f2"><td class="memItemLeft" align="right" valign="top">QValueAxis *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a873ff371030a2d22c8d735231ec350f2">axisX</a> [3]</td></tr>
+<tr class="separator:a873ff371030a2d22c8d735231ec350f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2940ce4162f4d9fb2045311d2af386" id="r_a2b2940ce4162f4d9fb2045311d2af386"><td class="memItemLeft" align="right" valign="top">QValueAxis *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a2b2940ce4162f4d9fb2045311d2af386">axisY</a> [3]</td></tr>
+<tr class="separator:a2b2940ce4162f4d9fb2045311d2af386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d8b10fe9a225d226a17c1722b46ea4" id="r_a73d8b10fe9a225d226a17c1722b46ea4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a73d8b10fe9a225d226a17c1722b46ea4">sampleCount</a> = 0</td></tr>
+<tr class="separator:a73d8b10fe9a225d226a17c1722b46ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4818f79cd01bf175beabedd4223972ca" id="r_a4818f79cd01bf175beabedd4223972ca"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChartWindow.html#a4818f79cd01bf175beabedd4223972ca">maxSamples</a> = 600</td></tr>
+<tr class="memdesc:a4818f79cd01bf175beabedd4223972ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">30s / 0.05s  <br /></td></tr>
+<tr class="separator:a4818f79cd01bf175beabedd4223972ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa ta tworzy trzy wykresy opartych na QChartView oraz QLineSeries, a także posiada metody do aktualizacji danych, konfiguracji wykresów. Dodatkowo udostępnia statyczną metodę <a class="el" href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5" title="Statyczna metoda otwierająca okno wykresów.">openChartWindow()</a> do samodzielnego wyświetlenia okna wykresów. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00019">19</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a898138e91e25646ddbcce42ebe88d3d5" name="a898138e91e25646ddbcce42ebe88d3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898138e91e25646ddbcce42ebe88d3d5">&#9670;&#160;</a></span>ChartWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChartWindow::ChartWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Konstruktor klasy <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a>.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Wskaźnik do obiektu nadrzędnego (domyślnie nullptr).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Tworzy interfejs użytkownika, ustawia layout, inicjalizuje trzy wykresy (dla osi X, Y i Z) o tytułach (tłumaczalnych), zakresach osi oraz stylem renderowania (antyaliasing).</p>
+<p>Domyślnie wykresy pokazują okres 30 sekund przy 600 próbkach (próbkowanie co 0.05 sekundy).</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Wskaźnik do obiektu nadrzędnego (domyślnie nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00015">15</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_a898138e91e25646ddbcce42ebe88d3d5_cgraph.png" border="0" usemap="#aclassChartWindow_a898138e91e25646ddbcce42ebe88d3d5_cgraph" alt=""/></div>
+<map name="aclassChartWindow_a898138e91e25646ddbcce42ebe88d3d5_cgraph" id="aclassChartWindow_a898138e91e25646ddbcce42ebe88d3d5_cgraph">
+<area shape="rect" title="Konstruktor ChartWindow. Tworzy interfejs użytkownika i ustawia trzy wykresy, przy czym każdy wykres ..." alt="" coords="5,5,208,31"/>
+<area shape="rect" href="classChartWindow.html#aef448551c02f8ff48232d023ca532c8d" title="Inicjalizuje wykres dla danej serii." alt="" coords="256,5,443,31"/>
+<area shape="poly" title=" " alt="" coords="208,15,242,15,242,21,208,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9714c04a78085f4a64559008c5fe39e9" name="a9714c04a78085f4a64559008c5fe39e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9714c04a78085f4a64559008c5fe39e9">&#9670;&#160;</a></span>~ChartWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ChartWindow::~ChartWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destruktor klasy <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a>.</p>
+<p>Usuwa utworzony interfejs, zwalniając pamięć. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00038">38</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="af90550b6cc4930860091807ccabb7976" name="af90550b6cc4930860091807ccabb7976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90550b6cc4930860091807ccabb7976">&#9670;&#160;</a></span>addData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartWindow::addData </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Dodaje nowe dane do serii wykresów i aktualizuje zakres osi X.</p>
+<p>Dodaje nowe punkty do każdej serii i dba o przesuwanie zakresu osi X, by wyświetlał okres 30 sekund (600 próbek) oraz usuwa starsze dane, gdy liczba próbek przekroczy ten limit.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wartość X. </td></tr>
+    <tr><td class="paramname">y</td><td>Wartość Y. </td></tr>
+    <tr><td class="paramname">z</td><td>Wartość Z.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Do każdej serii (odpowiadającej osi X, Y i Z) dodaje nowy punkt o współrzędnych: czas, wartość. Jeżeli liczba próbek przekroczy maxSamples (600 próbek, czyli 30 sekund), usuwa najstarsze punkty. Zakres osi X jest ustawiany tak, by pokazywać ostatnie 30 sekund.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wartość osi X. </td></tr>
+    <tr><td class="paramname">y</td><td>Wartość osi Y. </td></tr>
+    <tr><td class="paramname">z</td><td>Wartość osi Z. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00131">131</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_af90550b6cc4930860091807ccabb7976_cgraph.png" border="0" usemap="#aclassChartWindow_af90550b6cc4930860091807ccabb7976_cgraph" alt=""/></div>
+<map name="aclassChartWindow_af90550b6cc4930860091807ccabb7976_cgraph" id="aclassChartWindow_af90550b6cc4930860091807ccabb7976_cgraph">
+<area shape="rect" title="Dodaje dane do wykresów." alt="" coords="5,5,176,31"/>
+<area shape="rect" href="classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="224,5,443,31"/>
+<area shape="poly" title=" " alt="" coords="176,15,210,15,210,21,176,21"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_af90550b6cc4930860091807ccabb7976_icgraph.png" border="0" usemap="#aclassChartWindow_af90550b6cc4930860091807ccabb7976_icgraph" alt=""/></div>
+<map name="aclassChartWindow_af90550b6cc4930860091807ccabb7976_icgraph" id="aclassChartWindow_af90550b6cc4930860091807ccabb7976_icgraph">
+<area shape="rect" title="Dodaje dane do wykresów." alt="" coords="787,13,957,38"/>
+<area shape="rect" href="classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="547,13,739,38"/>
+<area shape="poly" title=" " alt="" coords="773,28,739,28,739,23,773,23"/>
+<area shape="rect" href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="264,13,499,38"/>
+<area shape="poly" title=" " alt="" coords="533,28,499,28,499,23,533,23"/>
+<area shape="rect" href="classMainWindow.html#a9fdc27ee9a4d5f797ff6086107230f9c" title="Slot obsługujący kliknięcie przycisku otwierającego okno wykresów." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa6fe2f85301649e5b1ad3eaab9aab2e" name="aaa6fe2f85301649e5b1ad3eaab9aab2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6fe2f85301649e5b1ad3eaab9aab2e">&#9670;&#160;</a></span>getCurrentTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ChartWindow::getCurrentTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Oblicza aktualny czas na podstawie liczby próbek.</p>
+<dl class="section return"><dt>Zwraca</dt><dd>Czas w sekundach.</dd></dl>
+<p>Dla próbkowania co 0,05 sekundy, zwraca aktualny czas jako sampleCount * 0.05.</p>
+<dl class="section return"><dt>Zwraca</dt><dd>Aktualny czas w sekundach. </dd></dl>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00115">115</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_aaa6fe2f85301649e5b1ad3eaab9aab2e_icgraph.png" border="0" usemap="#aclassChartWindow_aaa6fe2f85301649e5b1ad3eaab9aab2e_icgraph" alt=""/></div>
+<map name="aclassChartWindow_aaa6fe2f85301649e5b1ad3eaab9aab2e_icgraph" id="aclassChartWindow_aaa6fe2f85301649e5b1ad3eaab9aab2e_icgraph">
+<area shape="rect" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="1005,13,1224,38"/>
+<area shape="rect" href="classChartWindow.html#af90550b6cc4930860091807ccabb7976" title="Dodaje dane do wykresów." alt="" coords="787,13,957,38"/>
+<area shape="poly" title=" " alt="" coords="992,28,957,28,957,23,992,23"/>
+<area shape="rect" href="classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="547,13,739,38"/>
+<area shape="poly" title=" " alt="" coords="773,28,739,28,739,23,773,23"/>
+<area shape="rect" href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="264,13,499,38"/>
+<area shape="poly" title=" " alt="" coords="533,28,499,28,499,23,533,23"/>
+<area shape="rect" href="classMainWindow.html#a9fdc27ee9a4d5f797ff6086107230f9c" title="Slot obsługujący kliknięcie przycisku otwierającego okno wykresów." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4921e9dab0975565a30e07137226aeb5" name="a4921e9dab0975565a30e07137226aeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4921e9dab0975565a30e07137226aeb5">&#9670;&#160;</a></span>openChartWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartWindow::openChartWindow </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>serialHandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metoda ta tworzy nową instancję <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a> (jeśli nie istnieje lub nie jest widoczna), ustawia odpowiednio atrybuty oraz łączy sygnał newData obiektu <a class="el" href="classSerialPortHandler.html" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru.">SerialPortHandler</a> z metodą updateData.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serialHandler</td><td>Wskaźnik do obiektu <a class="el" href="classSerialPortHandler.html" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru.">SerialPortHandler</a>, którego sygnały będą przesyłane do wykresów.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Jeśli okno nie istnieje lub nie jest widoczne, tworzy nową instancję <a class="el" href="classChartWindow.html" title="Klasa ChartWindow odpowiedzialna za wyświetlanie wykresów dla sygnałów X, Y oraz Z.">ChartWindow</a>, ustawia atrybut WA_DeleteOnClose, łączy sygnał z <a class="el" href="classSerialPortHandler.html" title="Klasa do obsługi połączenia szeregowego i odbioru danych akcelerometru.">SerialPortHandler</a> z metodą updateData, a następnie wyświetla okno.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serialHandler</td><td>Wskaźnik do obiektu odpowiedzialnego za obsługę portu szeregowego. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00052">52</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_a4921e9dab0975565a30e07137226aeb5_cgraph.png" border="0" usemap="#aclassChartWindow_a4921e9dab0975565a30e07137226aeb5_cgraph" alt=""/></div>
+<map name="aclassChartWindow_a4921e9dab0975565a30e07137226aeb5_cgraph" id="aclassChartWindow_a4921e9dab0975565a30e07137226aeb5_cgraph">
+<area shape="rect" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="5,5,240,31"/>
+<area shape="rect" href="classChartWindow.html#a445f875cd6c4cbe82e357e18ae6d7fd8" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="288,5,480,31"/>
+<area shape="poly" title=" " alt="" coords="240,15,274,15,274,21,240,21"/>
+<area shape="rect" href="classChartWindow.html#af90550b6cc4930860091807ccabb7976" title="Dodaje dane do wykresów." alt="" coords="528,5,699,31"/>
+<area shape="poly" title=" " alt="" coords="480,15,514,15,514,21,480,21"/>
+<area shape="rect" href="classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="747,5,965,31"/>
+<area shape="poly" title=" " alt="" coords="699,15,733,15,733,21,699,21"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_a4921e9dab0975565a30e07137226aeb5_icgraph.png" border="0" usemap="#aclassChartWindow_a4921e9dab0975565a30e07137226aeb5_icgraph" alt=""/></div>
+<map name="aclassChartWindow_a4921e9dab0975565a30e07137226aeb5_icgraph" id="aclassChartWindow_a4921e9dab0975565a30e07137226aeb5_icgraph">
+<area shape="rect" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="264,13,499,38"/>
+<area shape="rect" href="classMainWindow.html#a9fdc27ee9a4d5f797ff6086107230f9c" title="Slot obsługujący kliknięcie przycisku otwierającego okno wykresów." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef448551c02f8ff48232d023ca532c8d" name="aef448551c02f8ff48232d023ca532c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef448551c02f8ff48232d023ca532c8d">&#9670;&#160;</a></span>setupChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartWindow::setupChart </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>title</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Inicjalizuje wykres dla danego indeksu i ustawia jego konfigurację.</p>
+<p>Ustawia tytuł (przy użyciu QObject::tr() dla tłumaczeń), zakres osi X (0 do 30 sekund) oraz domyślne etykiety osi, które są również tłumaczalne.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Indeks wykresu (0 = X, 1 = Y, 2 = Z). </td></tr>
+    <tr><td class="paramname">title</td><td>Tytuł wykresu.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Ustawia tytuł wykresu (przy użyciu metody tr(), aby był tłumaczalny), zakres osi X na 0–30 sekund, etykiety osi (Time (s) oraz Value) oraz łączy serię danych z odpowiednimi osiami.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Indeks wykresu (0 = X, 1 = Y, 2 = Z). </td></tr>
+    <tr><td class="paramname">title</td><td>Tytuł wykresu, który jest tłumaczalny. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00083">83</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_aef448551c02f8ff48232d023ca532c8d_icgraph.png" border="0" usemap="#aclassChartWindow_aef448551c02f8ff48232d023ca532c8d_icgraph" alt=""/></div>
+<map name="aclassChartWindow_aef448551c02f8ff48232d023ca532c8d_icgraph" id="aclassChartWindow_aef448551c02f8ff48232d023ca532c8d_icgraph">
+<area shape="rect" title="Inicjalizuje wykres dla danej serii." alt="" coords="256,5,443,31"/>
+<area shape="rect" href="classChartWindow.html#a898138e91e25646ddbcce42ebe88d3d5" title="Konstruktor ChartWindow. Tworzy interfejs użytkownika i ustawia trzy wykresy, przy czym każdy wykres ..." alt="" coords="5,5,208,31"/>
+<area shape="poly" title=" " alt="" coords="242,21,208,21,208,15,242,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a445f875cd6c4cbe82e357e18ae6d7fd8" name="a445f875cd6c4cbe82e357e18ae6d7fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445f875cd6c4cbe82e357e18ae6d7fd8">&#9670;&#160;</a></span>updateData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartWindow::updateData </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot aktualizujący dane na wykresach.</p>
+<p>Metoda ta dodaje kolejne punkty do serii danych na wykresach.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wartość dla osi X. </td></tr>
+    <tr><td class="paramname">y</td><td>Wartość dla osi Y. </td></tr>
+    <tr><td class="paramname">z</td><td>Wartość dla osi Z.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Rzutuje otrzymane wartości double na float i przekazuje je do metody addData, która aktualizuje poszczególne serie wykresów.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Wartość osi X. </td></tr>
+    <tr><td class="paramname">y</td><td>Wartość osi Y. </td></tr>
+    <tr><td class="paramname">z</td><td>Wartość osi Z. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00164">164</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_cgraph.png" border="0" usemap="#aclassChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_cgraph" alt=""/></div>
+<map name="aclassChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_cgraph" id="aclassChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_cgraph">
+<area shape="rect" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="5,5,197,31"/>
+<area shape="rect" href="classChartWindow.html#af90550b6cc4930860091807ccabb7976" title="Dodaje dane do wykresów." alt="" coords="245,5,416,31"/>
+<area shape="poly" title=" " alt="" coords="197,15,231,15,231,21,197,21"/>
+<area shape="rect" href="classChartWindow.html#aaa6fe2f85301649e5b1ad3eaab9aab2e" title="Oblicza aktualny czas w sekundach na podstawie liczby próbek." alt="" coords="464,5,683,31"/>
+<area shape="poly" title=" " alt="" coords="416,15,450,15,450,21,416,21"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_icgraph.png" border="0" usemap="#aclassChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_icgraph" alt=""/></div>
+<map name="aclassChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_icgraph" id="aclassChartWindow_a445f875cd6c4cbe82e357e18ae6d7fd8_icgraph">
+<area shape="rect" title="Aktualizuje dane wykresów na podstawie otrzymanych wartości." alt="" coords="547,13,739,38"/>
+<area shape="rect" href="classChartWindow.html#a4921e9dab0975565a30e07137226aeb5" title="Statyczna metoda otwierająca okno wykresów." alt="" coords="264,13,499,38"/>
+<area shape="poly" title=" " alt="" coords="533,28,499,28,499,23,533,23"/>
+<area shape="rect" href="classMainWindow.html#a9fdc27ee9a4d5f797ff6086107230f9c" title="Slot obsługujący kliknięcie przycisku otwierającego okno wykresów." alt="" coords="5,5,216,45"/>
+<area shape="poly" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af0fa28c64e8a2e4ee8da8ac42b855ec3" name="af0fa28c64e8a2e4ee8da8ac42b855ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0fa28c64e8a2e4ee8da8ac42b855ec3">&#9670;&#160;</a></span>updateTranslations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChartWindow::updateTranslations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot wywoływany po zmianie języka, który odświeża teksty tytułów wykresów oraz etykiety osi. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8cpp_source.html#l00169">169</a> pliku <a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a873ff371030a2d22c8d735231ec350f2" name="a873ff371030a2d22c8d735231ec350f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873ff371030a2d22c8d735231ec350f2">&#9670;&#160;</a></span>axisX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QValueAxis* ChartWindow::axisX[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00099">99</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2b2940ce4162f4d9fb2045311d2af386" name="a2b2940ce4162f4d9fb2045311d2af386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2940ce4162f4d9fb2045311d2af386">&#9670;&#160;</a></span>axisY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QValueAxis* ChartWindow::axisY[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00100">100</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d770318d122d2c79b539230a61566cb" name="a4d770318d122d2c79b539230a61566cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d770318d122d2c79b539230a61566cb">&#9670;&#160;</a></span>chartViews</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QChartView* ChartWindow::chartViews[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00097">97</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4818f79cd01bf175beabedd4223972ca" name="a4818f79cd01bf175beabedd4223972ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4818f79cd01bf175beabedd4223972ca">&#9670;&#160;</a></span>maxSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ChartWindow::maxSamples = 600</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00102">102</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a73d8b10fe9a225d226a17c1722b46ea4" name="a73d8b10fe9a225d226a17c1722b46ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d8b10fe9a225d226a17c1722b46ea4">&#9670;&#160;</a></span>sampleCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ChartWindow::sampleCount = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00101">101</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3224f07eabf0d2424b440a0eb2bd5eca" name="a3224f07eabf0d2424b440a0eb2bd5eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3224f07eabf0d2424b440a0eb2bd5eca">&#9670;&#160;</a></span>series</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineSeries* ChartWindow::series[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00098">98</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5b7848a04ff1432fe842398ab54dae9" name="aa5b7848a04ff1432fe842398ab54dae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b7848a04ff1432fe842398ab54dae9">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::ChartWindow* ChartWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="chartwindow_8hpp_source.html#l00096">96</a> pliku <a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="chartwindow_8hpp_source.html">chartwindow.hpp</a></li>
+<li><a class="el" href="chartwindow_8cpp_source.html">chartwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classChartWindow.html">ChartWindow</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

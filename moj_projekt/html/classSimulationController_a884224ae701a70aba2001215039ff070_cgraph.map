@@ -1,0 +1,5 @@
+<map id="SimulationController::startSimulation" name="SimulationController::startSimulation">
+<area shape="rect" id="Node000001" title="Uruchamia symulację." alt="" coords="5,5,161,45"/>
+<area shape="rect" id="Node000002" href="$classAccSimulator.html#a02798ac1fce5aad106109bb2d7fd7e11" title="Rozpoczyna generowanie danych." alt="" coords="209,13,356,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,23,195,23,195,28,162,28"/>
+</map>

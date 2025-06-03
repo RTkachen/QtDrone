@@ -1,0 +1,7 @@
+<map id="SerialPortHandler::onReadyRead" name="SerialPortHandler::onReadyRead">
+<area shape="rect" id="Node000001" title="Slot wywoływany, gdy port szeregowy odbierze nowe dane." alt="" coords="5,37,149,77"/>
+<area shape="rect" id="Node000002" href="$classSerialPortHandler.html#af41f27008f2baa53581194e7c99e0ea6" title="Oblicza 8&#45;bitowy CRC (Polynomial 0x07) dla linii danych i zwraca go jako 2&#45;znakowy HEX." alt="" coords="197,5,341,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,43,183,37,184,42,150,48"/>
+<area shape="rect" id="Node000003" href="$classSerialPortHandler.html#acd995d6fbeecf515256074f1f31f2779" title="Sygnał emitowany po odebraniu nowych danych z akcelerometru." alt="" coords="197,69,341,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,67,184,72,183,78,149,72"/>
+</map>

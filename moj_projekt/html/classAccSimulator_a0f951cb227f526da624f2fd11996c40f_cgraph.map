@@ -1,0 +1,9 @@
+<map id="AccSimulator::AccSimulator" name="AccSimulator::AccSimulator">
+<area shape="rect" id="Node000001" title="Konstruktor klasy AccSimulator." alt="" coords="5,31,208,56"/>
+<area shape="rect" id="Node000002" href="$classAccSimulator.html#a297ca584abee0461f0899509dd26149f" title="Główna funkcja generująca dane wywoływana przez QTimer." alt="" coords="256,31,461,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,41,243,41,243,46,208,46"/>
+<area shape="rect" id="Node000003" href="$classAccSimulator.html#afb9665c5ea98d0dbbf650060469f9135" title="Sygnał z nowymi danymi XYZ." alt="" coords="531,5,706,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,31,518,25,518,30,462,36"/>
+<area shape="rect" id="Node000004" href="$classAccSimulator.html#a0811d1762b224acb17f8576a7aeb1f7b" title="Generuje losową liczbę zmiennoprzecinkową z danego zakresu." alt="" coords="509,55,728,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="462,50,496,53,496,59,461,55"/>
+</map>
